@@ -1,0 +1,90 @@
+% hw703.sty -- shared style for the 10-703 homework handout and submission template.
+% Edit the assignment metadata below once; both handout.tex and template.tex use it.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{hw703}
+
+% ---------------------------------------------------------------------------
+% Assignment metadata
+% ---------------------------------------------------------------------------
+\newcommand{\hwnum}{5}
+\newcommand{\hwtitle}{Model-Based and Offline RL}
+\newcommand{\semester}{Fall 2026}
+\newcommand{\outdate}{\textbf{10/26/2026}}   % e.g. Monday, October 26th, 2026
+\newcommand{\duedate}{\textbf{11/11/2026}}   % e.g. Friday, November 11th, 2026 by 11:59pm ET
+\newcommand{\courseurl}{https://cmudeeprl.github.io/703website_f26/}
+\newcommand{\modelurl}{https://drive.google.com/file/d/1NpJF22mE9j2_7RrhKpVyRy1plBSl9KYn/view?usp=sharing}
+
+% ---------------------------------------------------------------------------
+% Packages
+% ---------------------------------------------------------------------------
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[margin=1in]{geometry}
+\RequirePackage{amsmath, amssymb, amsthm, bm, bbm}
+\RequirePackage{graphicx, float}
+\RequirePackage{xcolor}
+\RequirePackage{enumitem}
+\RequirePackage{parskip}
+\RequirePackage{booktabs}
+\RequirePackage{lastpage}
+\RequirePackage{algorithm}
+\RequirePackage[noend]{algpseudocode}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage[colorlinks=true, urlcolor=magenta, linkcolor=red, citecolor=green!50!black]{hyperref}
+\RequirePackage[strings]{underscore}  % allows _ in text, e.g. \code{get_loss}
+
+% ---------------------------------------------------------------------------
+% Text macros
+% ---------------------------------------------------------------------------
+\setlength{\emergencystretch}{3em}  % avoid overfull lines from long \code{...} names
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\pts}[1]{\textbf{(#1~pts)}}
+
+% Section headings used for problems and sub-problems in both documents
+\newcommand{\problem}[2]{\section*{Problem #1: #2}}
+\newcommand{\subproblem}[2]{\subsection*{#1\quad #2}}
+
+% ---------------------------------------------------------------------------
+% Title block (handout)
+% ---------------------------------------------------------------------------
+\newcommand{\hwheader}{%
+  \begin{center}
+    {\LARGE\scshape Homework \hwnum: \hwtitle}\\[1em]
+    {\large\scshape CMU 10-703: Deep Reinforcement Learning (\semester)}\\[0.5em]
+    OUT: \outdate\\
+    DUE: \duedate
+  \end{center}}
+
+% ---------------------------------------------------------------------------
+% Answer boxes (template). All boxes have a fixed size: students must not resize them.
+%   \begin{answer}[height=8cm] ... \end{answer}   full-width box titled "Solution"
+%   \fillin[5cm]{...}                              small inline box for short answers
+% ---------------------------------------------------------------------------
+\newtcolorbox{answer}[1][]{%
+  enhanced, colback=white, colframe=black!75, title=Solution,
+  height=5cm, valign=top, #1}
+\newcommand{\fillin}[2][5cm]{%
+  \begin{tcolorbox}[blank, borderline={1pt}{0pt}, width=#1, height=1cm,
+                    nobeforeafter, box align=center, halign=center, valign=center]
+    #2
+  \end{tcolorbox}}
+
+% Collaborator rows and the time-spent table, shared by every homework template
+\newcommand{\collaboratorrow}[1]{%
+  \noindent Name #1: \fillin[5cm]{}\hfill Andrew ID #1: \fillin[4cm]{}\par\medskip}
+
+\newcommand{\timespenttable}{%
+  \begin{answer}[height=5cm]
+    \centering
+    \begin{tabular}{r|c}
+      Alone & \hspace{6em} \\ \hline
+      With teammates & \\ \hline
+      With other classmates & \\ \hline
+      At office hours & \\
+    \end{tabular}
+  \end{answer}}
+
+\endinput

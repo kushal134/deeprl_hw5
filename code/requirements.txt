@@ -1,0 +1,10 @@
+torch
+numpy
+scipy
+matplotlib
+gymnasium[mujoco]>=1.0
+box2d==2.3.10
+opencv-python
+minari[hf,hdf5]>=0.5
+moviepy
+Pillow

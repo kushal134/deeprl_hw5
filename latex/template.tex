@@ -1,0 +1,182 @@
+\documentclass[11pt]{article}
+\usepackage{hw703}
+
+\begin{document}
+\begin{center}
+  {\LARGE\scshape Homework \hwnum{} Template: \hwtitle}\\[0.5em]
+  {\large\scshape CMU 10-703: Deep Reinforcement Learning (\semester)}
+\end{center}
+
+Use this template to record your answers for Homework \hwnum. Add your answers using \LaTeX{} and then save your document as a PDF to upload to Gradescope. You are required to use this template to submit your answers. \textbf{You should not alter this template in any way} other than to insert your solutions. You must submit all \pageref{LastPage} pages of this template to Gradescope. Do not remove the instructions page(s). Altering this template or including your solutions outside of the provided boxes can result in your assignment being graded incorrectly.
+
+You should also zip your \code{code/} directory and upload it to the \textbf{separate} Gradescope coding assignment. Remember to mark all teammates on \textbf{both} assignment uploads through Gradescope.
+
+\section*{Instructions for Specific Problem Types}
+On this homework, you must fill in blanks for each problem. Please make sure your final answer is fully included in the given space. \textbf{Do not change the size of the box provided.} For short answer questions you should \textbf{not} include your work in your solution. Only provide an explanation or proof if specifically asked. To include a plot, use \code{\textbackslash includegraphics[width=\textbackslash linewidth]\{plot.png\}} inside the box, scaled so that it fits.
+
+\begin{quote}
+  \textbf{Fill in the blank:} What is the course number?\quad \fillin[4cm]{\Large 10703}
+\end{quote}
+
+\newpage
+\problem{0}{Collaborators}
+Enter your team members' names and Andrew IDs in the boxes below. If you worked in a team with fewer than three people, leave the extra boxes blank.
+
+\collaboratorrow{1}
+\collaboratorrow{2}
+\collaboratorrow{3}
+
+\textbf{Collaboration:} Detail the work division amongst your group below.
+\begin{answer}[height=4cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+% ===========================================================================
+\newpage
+\part*{Part I: Model-Based RL}
+\problem{1}{Model-Based RL with PETS \pts{105}}
+
+\subproblem{1.1}{Model-Based Predictive Control \pts{25}}
+
+\textbf{1.1.1} \pts{10} CEM (without MPC) with ground-truth dynamics.
+
+Success percentage: \fillin{% YOUR SOLUTION HERE
+}
+
+\textbf{1.1.2} \pts{10} Random sampling with ground-truth dynamics.
+
+Success percentage without MPC: \fillin{% YOUR SOLUTION HERE
+}
+
+Success percentage with MPC: \fillin{% YOUR SOLUTION HERE
+}
+
+How does the performance of random sampling compare to that of CEM?
+\begin{answer}[height=4cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\textbf{1.1.3} \pts{5} MPC vs.\ open-loop control: which performs better on what environments, and why? Discuss the pros and cons of MPC.
+\begin{answer}[height=7cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\newpage
+\subproblem{1.2}{Single Probabilistic Network \pts{30}}
+
+\textbf{1.2.1} \pts{4} Training loss plot.
+\begin{answer}[height=9cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\textbf{1.2.2} \pts{10} MPC with random sampling. Success percentage: \fillin{% YOUR SOLUTION HERE
+}
+
+\textbf{1.2.3} \pts{10} MPC with CEM. Success percentage: \fillin{% YOUR SOLUTION HERE
+}
+
+\textbf{1.2.4} \pts{6} Random sampling vs.\ CEM. How did MPC with this model perform in general? When does the derived policy succeed, and when does it fail?
+\begin{answer}[height=6cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\newpage
+\subproblem{1.3}{MBRL with PETS \pts{15}}
+
+\textbf{1.3.1} \pts{10} Training loss plot.
+\begin{answer}[height=9cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\textbf{1.3.2} \pts{5} Test success percentage vs.\ PETS iterations plot.
+\begin{answer}[height=9cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\newpage
+\subproblem{1.4}{Training with Synthetic Data \pts{35}}
+
+\textbf{1.4.1} \pts{10} Ablation over model vs.\ real data: plot and discussion.
+\begin{answer}[height=10cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\textbf{1.4.2} \pts{10} Ablation over model rollout lengths: plot and discussion.
+\begin{answer}[height=10cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\textbf{1.4.3} \pts{10} Model error vs.\ rollout length: plot and discussion.
+\begin{answer}[height=10cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\textbf{1.4.4} \pts{5} Under which scenarios would you prefer MBRL to policy gradient methods?
+\begin{answer}[height=6cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+% ===========================================================================
+\newpage
+\part*{Part II: Offline RL}
+\problem{2}{TD3 + Behavior Regularization \pts{50}}
+
+\subproblem{2.2}{Running TD3 without Any Offline Learning Modifications}
+Learning curves (evaluation returns and Q-values), and: what insights can we draw from evaluation returns being low but predicted Q-values being high?
+\begin{answer}[height=12cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\subproblem{2.3}{Behavior Regularized TD3}
+Learning curves (evaluation returns and Q-values) with $\alpha_\text{reg} = 10$.
+\begin{answer}[height=9cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\subproblem{2.4}{Conceptual Questions about Picking $\alpha_\text{reg}$}
+\begin{enumerate}
+  \item For which kinds of datasets will we expect larger values of $\alpha_\text{reg}$ to work better? For which datasets will we expect lower values to work better?
+  \begin{answer}[height=5cm]
+    % YOUR SOLUTION HERE
+  \end{answer}
+  \item Given a completed run with $\alpha_\text{reg} = 1.0$, how would you choose a reasonable value of $\alpha_\text{reg}$ if you could only run a single more run?
+  \begin{answer}[height=5cm]
+    % YOUR SOLUTION HERE
+  \end{answer}
+\end{enumerate}
+
+\newpage
+\problem{3}{Conceptual Questions on Offline RL \pts{50}}
+
+\textbf{(i)} Select all that apply and justify (see the handout for the three methods and statements 1--3).
+\begin{answer}[height=6cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\textbf{(ii)} Describe a scenario where distribution constraint methods would be preferable to support constraints.
+\begin{answer}[height=6cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\textbf{(iii)} Select all that apply and justify (see the handout for statements 1--3).
+\begin{answer}[height=6cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\textbf{(iv)} Why can offline RL perform better than imitation learning? Give a dataset where offline RL should outperform imitation, and one where imitation should outperform offline RL.
+\begin{answer}[height=6cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+% ===========================================================================
+\newpage
+\section*{Feedback}
+\textbf{Feedback:} You can help the course staff improve the course for future semesters by providing feedback. What was the most confusing part of this homework, and what would have made it less confusing?
+\begin{answer}[height=4cm]
+  % YOUR SOLUTION HERE
+\end{answer}
+
+\textbf{Time Spent:} How many hours did you spend working on this assignment? Your answer will not affect your grade. Please average your answer over all the members of your team.
+\timespenttable
+
+\end{document}
