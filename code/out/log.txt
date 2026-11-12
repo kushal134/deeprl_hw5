@@ -2186,3 +2186,32 @@
 2026-11-10 18:06:17 run_pets.py INFO    : Test episode 19
 2026-11-10 18:06:18 run_pets.py INFO    : Test success Random + MPC: 0.85
 2026-11-10 18:06:18 run_pets.py INFO    : ### Q1.3.2: Plot CEM + MPC vs. Random Policy + MPC over training
+2026-11-12 11:59:01 run_pets.py INFO    : ### Q1.2.1: Train a single network on 1000 random episodes for 100 iterations
+2026-11-12 11:59:02 run_pets.py INFO    : Warm up episode 0
+2026-11-12 11:59:02 run_pets.py INFO    : Warm up episode 99
+2026-11-12 11:59:02 run_pets.py INFO    : Warm up episode 199
+2026-11-12 11:59:02 run_pets.py INFO    : Warm up episode 299
+2026-11-12 11:59:02 run_pets.py INFO    : Warm up episode 399
+2026-11-12 11:59:02 run_pets.py INFO    : Warm up episode 499
+2026-11-12 11:59:02 run_pets.py INFO    : Warm up episode 599
+2026-11-12 11:59:02 run_pets.py INFO    : Warm up episode 699
+2026-11-12 11:59:02 run_pets.py INFO    : Warm up episode 799
+2026-11-12 11:59:03 run_pets.py INFO    : Warm up episode 899
+2026-11-12 11:59:03 run_pets.py INFO    : Warm up episode 999
+2026-11-12 11:59:03 mpc.py     INFO    : Train dynamics model for 100 iterations
+2026-11-12 11:59:03 run_pets.py INFO    : ### Q1.2.2: Test with Random Policy for 50 episodes
+2026-11-12 11:59:03 run_pets.py INFO    : Test episode 0
+2026-11-12 11:59:19 run_pets.py INFO    : Test episode 9
+2026-11-12 11:59:32 run_pets.py INFO    : Test episode 19
+2026-11-12 11:59:44 run_pets.py INFO    : Test episode 29
+2026-11-12 11:59:58 run_pets.py INFO    : Test episode 39
+2026-11-12 12:00:09 run_pets.py INFO    : Test episode 49
+2026-11-12 12:00:11 run_pets.py INFO    : Single + Random: avg_reward: -32.94, avg_success: 0.3
+2026-11-12 12:00:11 run_pets.py INFO    : ### Q1.2.3: Test with CEM for 50 episodes
+2026-11-12 12:00:11 run_pets.py INFO    : Test episode 0
+2026-11-12 12:00:26 run_pets.py INFO    : Test episode 9
+2026-11-12 12:00:43 run_pets.py INFO    : Test episode 19
+2026-11-12 12:01:02 run_pets.py INFO    : Test episode 29
+2026-11-12 12:01:16 run_pets.py INFO    : Test episode 39
+2026-11-12 12:01:37 run_pets.py INFO    : Test episode 49
+2026-11-12 12:01:38 run_pets.py INFO    : Single + CEM: avg_reward: -28.2, avg_success: 0.46
