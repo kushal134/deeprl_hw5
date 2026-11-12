@@ -22,13 +22,13 @@ On this homework, you must fill in blanks for each problem. Please make sure you
 \problem{0}{Collaborators}
 Enter your team members' names and Andrew IDs in the boxes below. If you worked in a team with fewer than three people, leave the extra boxes blank.
 
-\collaboratorrow{1}
-\collaboratorrow{2}
-\collaboratorrow{3}
+\collaboratorrow{1}  
+\collaboratorrow{2} 
+\collaboratorrow{3} 
 
 \textbf{Collaboration:} Detail the work division amongst your group below.
 \begin{answer}[height=4cm]
-  % YOUR SOLUTION HERE
+  Kushal did Problem 1, Arnav did Problem 2 and Vineeth did Problem 3
 \end{answer}
 
 % ===========================================================================
@@ -40,25 +40,29 @@ Enter your team members' names and Andrew IDs in the boxes below. If you worked 
 
 \textbf{1.1.1} \pts{10} CEM (without MPC) with ground-truth dynamics.
 
-Success percentage: \fillin{% YOUR SOLUTION HERE
+Success percentage: \fillin{94 \%
 }
 
 \textbf{1.1.2} \pts{10} Random sampling with ground-truth dynamics.
 
-Success percentage without MPC: \fillin{% YOUR SOLUTION HERE
+Success percentage without MPC: \fillin{ 70 \%
 }
 
-Success percentage with MPC: \fillin{% YOUR SOLUTION HERE
+Success percentage with MPC: \fillin{94 \%
 }
 
 How does the performance of random sampling compare to that of CEM?
 \begin{answer}[height=4cm]
-  % YOUR SOLUTION HERE
+  Both methods sample actions from the same initial Gaussian distribution, but CEM iteratively updates its sampling distribution using elite trajectories, while random shooting samples all trajectories independently and only selects the best at the end. Thus CEM generally finds better open-loop plans. MPC improves random shooting by replanning after every executed action, correcting errors caused by imperfect plans which explains its higher success rate.
 \end{answer}
 
 \textbf{1.1.3} \pts{5} MPC vs.\ open-loop control: which performs better on what environments, and why? Discuss the pros and cons of MPC.
 \begin{answer}[height=7cm]
-  % YOUR SOLUTION HERE
+  For Pushing2d-v1, we get 86\% and 96 \% without and with MPC respectively. For Pushing2dNoisyControl-v1, we get 58 \% and 80 \% without and with MPC respectively.
+
+  MPC is expected to perform better in environments with noisy actions/stochastic dynamics becuase it repeatedly observes the true state and replans.
+
+Open-loop control can be preferable in deterministic environments with accurate dynamics where a planned sequence is already reliable. MPC's main advantage is replanning after every executed action, which allows is to correct errors. MPC’s main disadvantages are its computational cost and with a long horizon or expensive optimizer, replanning can be slow.
 \end{answer}
 
 \newpage
@@ -66,18 +70,26 @@ How does the performance of random sampling compare to that of CEM?
 
 \textbf{1.2.1} \pts{4} Training loss plot.
 \begin{answer}[height=9cm]
-  % YOUR SOLUTION HERE
+
+\centering
+\includegraphics[width=0.7\linewidth]{../code/out/1.2.1-loss.png}
+\label{fig:placeholder}
+
 \end{answer}
 
-\textbf{1.2.2} \pts{10} MPC with random sampling. Success percentage: \fillin{% YOUR SOLUTION HERE
+\textbf{1.2.2} \pts{10} MPC with random sampling. Success percentage: \fillin{18 \%
 }
 
-\textbf{1.2.3} \pts{10} MPC with CEM. Success percentage: \fillin{% YOUR SOLUTION HERE
+\textbf{1.2.3} \pts{10} MPC with CEM. Success percentage: \fillin{ 9 \%
 }
 
 \textbf{1.2.4} \pts{6} Random sampling vs.\ CEM. How did MPC with this model perform in general? When does the derived policy succeed, and when does it fail?
 \begin{answer}[height=6cm]
-  % YOUR SOLUTION HERE
+  Random shooting achieved an 18\% success rate, while CEM achieved 6\%. Although CEM is a more effective optimizer in the ground-truth setting, it optimized inaccuracies in the learned dynamics model. This caused it to select action sequences with low predicted cost but poor real-environment performance. Random shooting was less susceptible to this model exploitation and therefore \textbf{performed better in this experiment}. 
+  
+  The learned-model policy succeeded when the model predictions were accurate over the short planning horizon and the required motion was simple. It failed especially near contact dynamics, in states poorly represented in the random training data, and when prediction errors compounded across several imagined steps. MPC helped by replanning, but it could not fully correct systematic errors in the learned model.
+
+  
 \end{answer}
 
 \newpage
@@ -85,12 +97,18 @@ How does the performance of random sampling compare to that of CEM?
 
 \textbf{1.3.1} \pts{10} Training loss plot.
 \begin{answer}[height=9cm]
-  % YOUR SOLUTION HERE
+ \centering
+\includegraphics[width=0.7\linewidth]{../code/out/1.3.1-loss.png}
+\label{fig:placeholder}
+
 \end{answer}
 
 \textbf{1.3.2} \pts{5} Test success percentage vs.\ PETS iterations plot.
 \begin{answer}[height=9cm]
-  % YOUR SOLUTION HERE
+  \centering
+\includegraphics[width=0.65\linewidth]{../code/out/1.3.2-cem-vs-random-success-rate.png}
+\label{fig:placeholder}
+
 \end{answer}
 
 \newpage
@@ -98,22 +116,35 @@ How does the performance of random sampling compare to that of CEM?
 
 \textbf{1.4.1} \pts{10} Ablation over model vs.\ real data: plot and discussion.
 \begin{answer}[height=10cm]
-  % YOUR SOLUTION HERE
+
+\includegraphics[width=0.5\linewidth]{../code/out/1.4.1-synthetic-ratio.png}
+\label{fig:placeholder}
+
+ The results are noisy and do not show a clear monotonic relationship between the synthetic-data ratio and success rate. In general we observe runs with low amount of synthetic data perform reasonably well agsainst runs with high amounts of synthetic data. Overall, these results suggest that a small or moderate amount of synthetic data can be useful, but relying entirely on model-generated data can lead to unstable performance. Real data anchors TD3 to actual environment behavior, while synthetic data increases the amount of experience available for training. 
 \end{answer}
 
 \textbf{1.4.2} \pts{10} Ablation over model rollout lengths: plot and discussion.
 \begin{answer}[height=10cm]
-  % YOUR SOLUTION HERE
+    \centering
+\includegraphics[width=0.6\linewidth]{../code/out/1.4.2-rollout-length.png}
+
+The success-rate curves are highly variable and show no clear trend, and all of them result in poor success rates. In general we expect shorter rollouts to perform better because they limit compounding errors.
+Longer rollouts provide more synthetic transitions per starting state, but they also make TD3 more dependent on model predictions farther from the real data distribution. 
 \end{answer}
 
 \textbf{1.4.3} \pts{10} Model error vs.\ rollout length: plot and discussion.
 \begin{answer}[height=10cm]
-  % YOUR SOLUTION HERE
+\includegraphics[width=0.5\linewidth]{../code/out/1.4.3-l2-error-rollout.png}
+\label{fig:placeholder}
+
+
+Unlike the success-rate plots, the model-error plot shows a clear pattern. The mean L2 prediction error increases steadily with rollout step, from approximately 0.15 at the first step to approximately 0.5 by step 15. This confirms that model errors compound as predictions are fed back into the model. The shaded area also increases overall, indicating greater variance at longer rollouts which is also a consequence of compounding errors
 \end{answer}
 
 \textbf{1.4.4} \pts{5} Under which scenarios would you prefer MBRL to policy gradient methods?
 \begin{answer}[height=6cm]
-  % YOUR SOLUTION HERE
+ MBRL is preffered when environment interaction is expensive or inefficient, because a learned dynamics model can generate many imagined or hypothetical transitions from each real interaction. MBRL can also be useful when the system has reasonably predictable/determinisitic dynamics and planning can exploit that structure.
+Policy-gradient methods may be preferable when the dynamics are highly complex or difficult to model accurately. They can learn directly from real experience without suffering from long horizon errors (as seen in 1.4.2).
 \end{answer}
 
 % ===========================================================================

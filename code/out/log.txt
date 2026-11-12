@@ -1,0 +1,2188 @@
+2026-11-10 16:42:06 run_pets.py INFO    : ### Q1.1.1: CEM (without MPC)
+2026-11-10 16:42:07 run_pets.py INFO    : Test episode 0
+2026-11-10 16:42:10 run_pets.py INFO    : Test episode 9
+2026-11-10 16:42:15 run_pets.py INFO    : Test episode 19
+2026-11-10 16:42:19 run_pets.py INFO    : Test episode 29
+2026-11-10 16:42:24 run_pets.py INFO    : Test episode 39
+2026-11-10 16:42:28 run_pets.py INFO    : Test episode 49
+2026-11-10 16:42:29 run_pets.py INFO    : CEM PushingEnv: avg_reward: -13.3, avg_success: 0.94
+2026-11-10 16:42:29 run_pets.py INFO    : ### Q1.1.2: Random Policy (without MPC)
+2026-11-10 16:42:29 run_pets.py INFO    : Test episode 0
+2026-11-10 16:42:36 run_pets.py INFO    : Test episode 9
+2026-11-10 16:42:43 run_pets.py INFO    : Test episode 19
+2026-11-10 16:42:51 run_pets.py INFO    : Test episode 29
+2026-11-10 16:42:59 run_pets.py INFO    : Test episode 39
+2026-11-10 16:43:07 run_pets.py INFO    : Test episode 49
+2026-11-10 16:43:07 run_pets.py INFO    : Random PushingEnv: avg_reward: -26.52, avg_success: 0.7
+2026-11-10 16:43:07 run_pets.py INFO    : ### Q1.1.2: Random Policy + MPC
+2026-11-10 16:43:07 run_pets.py INFO    : Test episode 0
+2026-11-10 16:43:25 run_pets.py INFO    : Test episode 9
+2026-11-10 16:43:44 run_pets.py INFO    : Test episode 19
+2026-11-10 16:44:05 run_pets.py INFO    : Test episode 29
+2026-11-10 16:44:22 run_pets.py INFO    : Test episode 39
+2026-11-10 16:44:40 run_pets.py INFO    : Test episode 49
+2026-11-10 16:44:42 run_pets.py INFO    : Random + MPC PushingEnv: avg_reward: -11.8, avg_success: 0.94
+2026-11-10 16:44:42 run_pets.py INFO    : ### Q1.1.3: CEM with and without MPC, with and without control noise
+2026-11-10 16:44:42 run_pets.py INFO    : Test episode 0
+2026-11-10 16:44:46 run_pets.py INFO    : Test episode 9
+2026-11-10 16:44:50 run_pets.py INFO    : Test episode 19
+2026-11-10 16:44:55 run_pets.py INFO    : Test episode 29
+2026-11-10 16:45:00 run_pets.py INFO    : Test episode 39
+2026-11-10 16:45:04 run_pets.py INFO    : Test episode 49
+2026-11-10 16:45:05 run_pets.py INFO    : CEM Pushing2D-v1: avg_reward: -16.08, avg_success: 0.86
+2026-11-10 16:45:05 run_pets.py INFO    : Test episode 0
+2026-11-10 16:45:22 run_pets.py INFO    : Test episode 9
+2026-11-10 16:45:40 run_pets.py INFO    : Test episode 19
+2026-11-10 16:45:56 run_pets.py INFO    : Test episode 29
+2026-11-10 16:46:13 run_pets.py INFO    : Test episode 39
+2026-11-10 16:46:30 run_pets.py INFO    : Test episode 49
+2026-11-10 16:46:32 run_pets.py INFO    : CEM + MPC Pushing2D-v1: avg_reward: -10.5, avg_success: 0.96
+2026-11-10 16:46:32 run_pets.py INFO    : Test episode 0
+2026-11-10 16:46:39 run_pets.py INFO    : Test episode 9
+2026-11-10 16:46:46 run_pets.py INFO    : Test episode 19
+2026-11-10 16:46:53 run_pets.py INFO    : Test episode 29
+2026-11-10 16:47:00 run_pets.py INFO    : Test episode 39
+2026-11-10 16:47:09 run_pets.py INFO    : Test episode 49
+2026-11-10 16:47:09 run_pets.py INFO    : CEM Pushing2DNoisyControl-v1: avg_reward: -26.82, avg_success: 0.58
+2026-11-10 16:47:09 run_pets.py INFO    : Test episode 0
+2026-11-10 16:47:37 run_pets.py INFO    : Test episode 9
+2026-11-10 16:48:01 run_pets.py INFO    : Test episode 19
+2026-11-10 16:48:23 run_pets.py INFO    : Test episode 29
+2026-11-10 16:48:44 run_pets.py INFO    : Test episode 39
+2026-11-10 16:49:07 run_pets.py INFO    : Test episode 49
+2026-11-10 16:49:09 run_pets.py INFO    : CEM + MPC Pushing2DNoisyControl-v1: avg_reward: -17.32, avg_success: 0.8
+2026-11-10 17:29:28 run_pets.py INFO    : ### Q1.2.1: Train a single network on 1000 random episodes for 100 iterations
+2026-11-10 17:29:29 run_pets.py INFO    : Warm up episode 0
+2026-11-10 17:29:29 run_pets.py INFO    : Warm up episode 99
+2026-11-10 17:29:30 run_pets.py INFO    : Warm up episode 199
+2026-11-10 17:29:30 run_pets.py INFO    : Warm up episode 299
+2026-11-10 17:29:30 run_pets.py INFO    : Warm up episode 399
+2026-11-10 17:29:30 run_pets.py INFO    : Warm up episode 499
+2026-11-10 17:29:30 run_pets.py INFO    : Warm up episode 599
+2026-11-10 17:29:30 run_pets.py INFO    : Warm up episode 699
+2026-11-10 17:29:30 run_pets.py INFO    : Warm up episode 799
+2026-11-10 17:29:30 run_pets.py INFO    : Warm up episode 899
+2026-11-10 17:29:30 run_pets.py INFO    : Warm up episode 999
+2026-11-10 17:29:30 mpc.py     INFO    : Train dynamics model for 100 iterations
+2026-11-10 17:31:20 run_pets.py INFO    : ### Q1.2.1: Train a single network on 1000 random episodes for 100 iterations
+2026-11-10 17:31:21 run_pets.py INFO    : Warm up episode 0
+2026-11-10 17:31:21 run_pets.py INFO    : Warm up episode 99
+2026-11-10 17:31:21 run_pets.py INFO    : Warm up episode 199
+2026-11-10 17:31:21 run_pets.py INFO    : Warm up episode 299
+2026-11-10 17:31:21 run_pets.py INFO    : Warm up episode 399
+2026-11-10 17:31:21 run_pets.py INFO    : Warm up episode 499
+2026-11-10 17:31:21 run_pets.py INFO    : Warm up episode 599
+2026-11-10 17:31:21 run_pets.py INFO    : Warm up episode 699
+2026-11-10 17:31:22 run_pets.py INFO    : Warm up episode 799
+2026-11-10 17:31:22 run_pets.py INFO    : Warm up episode 899
+2026-11-10 17:31:22 run_pets.py INFO    : Warm up episode 999
+2026-11-10 17:31:22 mpc.py     INFO    : Train dynamics model for 100 iterations
+2026-11-10 17:31:23 run_pets.py INFO    : ### Q1.2.2: Test with Random Policy for 50 episodes
+2026-11-10 17:31:23 run_pets.py INFO    : Test episode 0
+2026-11-10 17:31:37 run_pets.py INFO    : Test episode 9
+2026-11-10 17:31:54 run_pets.py INFO    : Test episode 19
+2026-11-10 17:32:13 run_pets.py INFO    : Test episode 29
+2026-11-10 17:32:33 run_pets.py INFO    : Test episode 39
+2026-11-10 17:32:52 run_pets.py INFO    : Test episode 49
+2026-11-10 17:32:53 run_pets.py INFO    : Single + Random: avg_reward: -37.74, avg_success: 0.18
+2026-11-10 17:32:53 run_pets.py INFO    : ### Q1.2.3: Test with CEM for 50 episodes
+2026-11-10 17:32:53 run_pets.py INFO    : Test episode 0
+2026-11-10 17:33:23 run_pets.py INFO    : Test episode 9
+2026-11-10 17:33:56 run_pets.py INFO    : Test episode 19
+2026-11-10 17:34:28 run_pets.py INFO    : Test episode 29
+2026-11-10 17:34:58 run_pets.py INFO    : Test episode 39
+2026-11-10 17:35:31 run_pets.py INFO    : Test episode 49
+2026-11-10 17:35:34 run_pets.py INFO    : Single + CEM: avg_reward: -39.22, avg_success: 0.06
+2026-11-10 17:37:47 run_pets.py INFO    : ### Q1.3.1: Train PETS from 100 random episodes + 500 MPC iterations
+2026-11-10 17:37:48 run_pets.py INFO    : Warm up episode 0
+2026-11-10 17:37:48 run_pets.py INFO    : Warm up episode 99
+2026-11-10 17:37:48 mpc.py     INFO    : Train dynamics model for 10 iterations
+2026-11-10 17:37:48 run_pets.py INFO    : ####################################################################
+2026-11-10 17:37:48 run_pets.py INFO    : Starting training iteration 1.
+2026-11-10 17:37:51 run_pets.py INFO    : Rewards obtained: [-16.0], Rollout Length: 18
+2026-11-10 17:37:51 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:37:51 run_pets.py INFO    : Test episode 0
+2026-11-10 17:38:38 run_pets.py INFO    : Test episode 9
+2026-11-10 17:39:20 run_pets.py INFO    : Test episode 19
+2026-11-10 17:39:22 run_pets.py INFO    : Test success CEM + MPC: 0.45
+2026-11-10 17:39:22 run_pets.py INFO    : Test episode 0
+2026-11-10 17:39:50 run_pets.py INFO    : Test episode 9
+2026-11-10 17:40:23 run_pets.py INFO    : Test episode 19
+2026-11-10 17:40:25 run_pets.py INFO    : Test success Random + MPC: 0.15
+2026-11-10 17:40:25 run_pets.py INFO    : ####################################################################
+2026-11-10 17:40:25 run_pets.py INFO    : Starting training iteration 2.
+2026-11-10 17:40:28 run_pets.py INFO    : Rewards obtained: [-17.0], Rollout Length: 19
+2026-11-10 17:40:28 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:40:28 run_pets.py INFO    : ####################################################################
+2026-11-10 17:40:28 run_pets.py INFO    : Starting training iteration 3.
+2026-11-10 17:40:35 run_pets.py INFO    : Rewards obtained: [-40.0], Rollout Length: 41
+2026-11-10 17:40:35 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:40:35 run_pets.py INFO    : ####################################################################
+2026-11-10 17:40:35 run_pets.py INFO    : Starting training iteration 4.
+2026-11-10 17:40:37 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:40:37 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:40:37 run_pets.py INFO    : ####################################################################
+2026-11-10 17:40:37 run_pets.py INFO    : Starting training iteration 5.
+2026-11-10 17:40:40 run_pets.py INFO    : Rewards obtained: [-16.0], Rollout Length: 18
+2026-11-10 17:40:40 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:40:40 run_pets.py INFO    : ####################################################################
+2026-11-10 17:40:40 run_pets.py INFO    : Starting training iteration 6.
+2026-11-10 17:40:42 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:40:42 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:40:42 run_pets.py INFO    : ####################################################################
+2026-11-10 17:40:42 run_pets.py INFO    : Starting training iteration 7.
+2026-11-10 17:40:44 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:40:44 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:40:44 run_pets.py INFO    : ####################################################################
+2026-11-10 17:40:44 run_pets.py INFO    : Starting training iteration 8.
+2026-11-10 17:40:46 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:40:46 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:40:46 run_pets.py INFO    : ####################################################################
+2026-11-10 17:40:46 run_pets.py INFO    : Starting training iteration 9.
+2026-11-10 17:40:53 run_pets.py INFO    : Rewards obtained: [-40.0], Rollout Length: 41
+2026-11-10 17:40:53 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:40:53 run_pets.py INFO    : ####################################################################
+2026-11-10 17:40:53 run_pets.py INFO    : Starting training iteration 10.
+2026-11-10 17:40:55 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:40:55 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:40:55 run_pets.py INFO    : ####################################################################
+2026-11-10 17:40:55 run_pets.py INFO    : Starting training iteration 11.
+2026-11-10 17:40:57 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:40:57 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:40:57 run_pets.py INFO    : ####################################################################
+2026-11-10 17:40:57 run_pets.py INFO    : Starting training iteration 12.
+2026-11-10 17:40:59 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:40:59 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:40:59 run_pets.py INFO    : ####################################################################
+2026-11-10 17:40:59 run_pets.py INFO    : Starting training iteration 13.
+2026-11-10 17:41:01 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:41:01 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:01 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:01 run_pets.py INFO    : Starting training iteration 14.
+2026-11-10 17:41:02 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:41:02 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:02 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:02 run_pets.py INFO    : Starting training iteration 15.
+2026-11-10 17:41:04 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:41:04 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:04 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:04 run_pets.py INFO    : Starting training iteration 16.
+2026-11-10 17:41:06 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:41:06 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:06 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:06 run_pets.py INFO    : Starting training iteration 17.
+2026-11-10 17:41:09 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 22
+2026-11-10 17:41:09 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:09 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:09 run_pets.py INFO    : Starting training iteration 18.
+2026-11-10 17:41:12 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:41:12 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:12 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:12 run_pets.py INFO    : Starting training iteration 19.
+2026-11-10 17:41:15 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:41:15 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:15 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:15 run_pets.py INFO    : Starting training iteration 20.
+2026-11-10 17:41:21 run_pets.py INFO    : Rewards obtained: [-40.0], Rollout Length: 41
+2026-11-10 17:41:21 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:21 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:21 run_pets.py INFO    : Starting training iteration 21.
+2026-11-10 17:41:23 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:41:23 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:23 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:23 run_pets.py INFO    : Starting training iteration 22.
+2026-11-10 17:41:27 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 25
+2026-11-10 17:41:27 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:27 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:27 run_pets.py INFO    : Starting training iteration 23.
+2026-11-10 17:41:29 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:41:29 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:29 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:29 run_pets.py INFO    : Starting training iteration 24.
+2026-11-10 17:41:31 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:41:31 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:31 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:31 run_pets.py INFO    : Starting training iteration 25.
+2026-11-10 17:41:32 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 17:41:32 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:32 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:32 run_pets.py INFO    : Starting training iteration 26.
+2026-11-10 17:41:34 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:41:34 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:34 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:34 run_pets.py INFO    : Starting training iteration 27.
+2026-11-10 17:41:37 run_pets.py INFO    : Rewards obtained: [-16.0], Rollout Length: 18
+2026-11-10 17:41:37 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:37 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:37 run_pets.py INFO    : Starting training iteration 28.
+2026-11-10 17:41:41 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 26
+2026-11-10 17:41:41 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:41 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:41 run_pets.py INFO    : Starting training iteration 29.
+2026-11-10 17:41:44 run_pets.py INFO    : Rewards obtained: [-15.0], Rollout Length: 17
+2026-11-10 17:41:44 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:44 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:44 run_pets.py INFO    : Starting training iteration 30.
+2026-11-10 17:41:46 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:41:46 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:46 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:46 run_pets.py INFO    : Starting training iteration 31.
+2026-11-10 17:41:47 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:41:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:47 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:47 run_pets.py INFO    : Starting training iteration 32.
+2026-11-10 17:41:52 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 21
+2026-11-10 17:41:52 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:52 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:52 run_pets.py INFO    : Starting training iteration 33.
+2026-11-10 17:41:54 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:41:54 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:54 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:54 run_pets.py INFO    : Starting training iteration 34.
+2026-11-10 17:41:58 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:41:58 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:41:58 run_pets.py INFO    : ####################################################################
+2026-11-10 17:41:58 run_pets.py INFO    : Starting training iteration 35.
+2026-11-10 17:42:00 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:42:00 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:00 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:00 run_pets.py INFO    : Starting training iteration 36.
+2026-11-10 17:42:02 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:42:02 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:02 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:02 run_pets.py INFO    : Starting training iteration 37.
+2026-11-10 17:42:04 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:42:04 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:04 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:04 run_pets.py INFO    : Starting training iteration 38.
+2026-11-10 17:42:06 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:42:06 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:06 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:06 run_pets.py INFO    : Starting training iteration 39.
+2026-11-10 17:42:07 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:42:07 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:07 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:07 run_pets.py INFO    : Starting training iteration 40.
+2026-11-10 17:42:10 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:42:10 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:10 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:10 run_pets.py INFO    : Starting training iteration 41.
+2026-11-10 17:42:13 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:42:13 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:13 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:13 run_pets.py INFO    : Starting training iteration 42.
+2026-11-10 17:42:15 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:42:15 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:15 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:15 run_pets.py INFO    : Starting training iteration 43.
+2026-11-10 17:42:17 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:42:17 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:17 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:17 run_pets.py INFO    : Starting training iteration 44.
+2026-11-10 17:42:20 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:42:20 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:20 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:20 run_pets.py INFO    : Starting training iteration 45.
+2026-11-10 17:42:22 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:42:22 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:22 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:22 run_pets.py INFO    : Starting training iteration 46.
+2026-11-10 17:42:23 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:42:23 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:23 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:23 run_pets.py INFO    : Starting training iteration 47.
+2026-11-10 17:42:26 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:42:26 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:26 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:26 run_pets.py INFO    : Starting training iteration 48.
+2026-11-10 17:42:28 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:42:28 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:28 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:28 run_pets.py INFO    : Starting training iteration 49.
+2026-11-10 17:42:30 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 18
+2026-11-10 17:42:30 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:30 run_pets.py INFO    : ####################################################################
+2026-11-10 17:42:30 run_pets.py INFO    : Starting training iteration 50.
+2026-11-10 17:42:31 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:42:31 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:42:32 run_pets.py INFO    : Test episode 0
+2026-11-10 17:42:48 run_pets.py INFO    : Test episode 9
+2026-11-10 17:43:07 run_pets.py INFO    : Test episode 19
+2026-11-10 17:43:09 run_pets.py INFO    : Test success CEM + MPC: 0.85
+2026-11-10 17:43:09 run_pets.py INFO    : Test episode 0
+2026-11-10 17:43:23 run_pets.py INFO    : Test episode 9
+2026-11-10 17:43:43 run_pets.py INFO    : Test episode 19
+2026-11-10 17:43:45 run_pets.py INFO    : Test success Random + MPC: 0.55
+2026-11-10 17:43:45 run_pets.py INFO    : ####################################################################
+2026-11-10 17:43:45 run_pets.py INFO    : Starting training iteration 51.
+2026-11-10 17:43:47 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:43:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:43:47 run_pets.py INFO    : ####################################################################
+2026-11-10 17:43:47 run_pets.py INFO    : Starting training iteration 52.
+2026-11-10 17:43:49 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:43:49 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:43:49 run_pets.py INFO    : ####################################################################
+2026-11-10 17:43:49 run_pets.py INFO    : Starting training iteration 53.
+2026-11-10 17:43:51 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:43:51 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:43:52 run_pets.py INFO    : ####################################################################
+2026-11-10 17:43:52 run_pets.py INFO    : Starting training iteration 54.
+2026-11-10 17:43:53 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:43:53 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:43:53 run_pets.py INFO    : ####################################################################
+2026-11-10 17:43:53 run_pets.py INFO    : Starting training iteration 55.
+2026-11-10 17:43:56 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:43:56 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:43:56 run_pets.py INFO    : ####################################################################
+2026-11-10 17:43:56 run_pets.py INFO    : Starting training iteration 56.
+2026-11-10 17:43:58 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:43:58 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:43:58 run_pets.py INFO    : ####################################################################
+2026-11-10 17:43:58 run_pets.py INFO    : Starting training iteration 57.
+2026-11-10 17:44:01 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:44:01 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:01 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:01 run_pets.py INFO    : Starting training iteration 58.
+2026-11-10 17:44:02 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:44:02 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:02 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:02 run_pets.py INFO    : Starting training iteration 59.
+2026-11-10 17:44:03 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:44:03 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:03 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:03 run_pets.py INFO    : Starting training iteration 60.
+2026-11-10 17:44:06 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:44:06 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:06 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:06 run_pets.py INFO    : Starting training iteration 61.
+2026-11-10 17:44:09 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:44:09 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:09 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:09 run_pets.py INFO    : Starting training iteration 62.
+2026-11-10 17:44:11 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:44:11 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:11 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:11 run_pets.py INFO    : Starting training iteration 63.
+2026-11-10 17:44:14 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:44:14 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:14 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:14 run_pets.py INFO    : Starting training iteration 64.
+2026-11-10 17:44:17 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 21
+2026-11-10 17:44:17 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:17 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:17 run_pets.py INFO    : Starting training iteration 65.
+2026-11-10 17:44:20 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:44:20 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:20 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:20 run_pets.py INFO    : Starting training iteration 66.
+2026-11-10 17:44:22 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:44:22 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:22 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:22 run_pets.py INFO    : Starting training iteration 67.
+2026-11-10 17:44:25 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 18
+2026-11-10 17:44:25 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:25 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:25 run_pets.py INFO    : Starting training iteration 68.
+2026-11-10 17:44:28 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:44:28 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:28 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:28 run_pets.py INFO    : Starting training iteration 69.
+2026-11-10 17:44:32 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 21
+2026-11-10 17:44:32 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:32 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:32 run_pets.py INFO    : Starting training iteration 70.
+2026-11-10 17:44:35 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 21
+2026-11-10 17:44:35 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:35 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:35 run_pets.py INFO    : Starting training iteration 71.
+2026-11-10 17:44:37 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:44:37 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:37 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:37 run_pets.py INFO    : Starting training iteration 72.
+2026-11-10 17:44:39 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:44:39 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:39 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:39 run_pets.py INFO    : Starting training iteration 73.
+2026-11-10 17:44:42 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:44:42 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:42 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:42 run_pets.py INFO    : Starting training iteration 74.
+2026-11-10 17:44:45 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 22
+2026-11-10 17:44:45 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:45 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:45 run_pets.py INFO    : Starting training iteration 75.
+2026-11-10 17:44:47 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:44:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:47 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:47 run_pets.py INFO    : Starting training iteration 76.
+2026-11-10 17:44:50 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:44:50 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:50 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:50 run_pets.py INFO    : Starting training iteration 77.
+2026-11-10 17:44:52 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:44:52 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:52 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:52 run_pets.py INFO    : Starting training iteration 78.
+2026-11-10 17:44:54 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:44:54 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:54 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:54 run_pets.py INFO    : Starting training iteration 79.
+2026-11-10 17:44:56 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:44:56 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:56 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:56 run_pets.py INFO    : Starting training iteration 80.
+2026-11-10 17:44:58 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:44:58 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:58 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:58 run_pets.py INFO    : Starting training iteration 81.
+2026-11-10 17:44:59 run_pets.py INFO    : Rewards obtained: [-5.0], Rollout Length: 7
+2026-11-10 17:44:59 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:44:59 run_pets.py INFO    : ####################################################################
+2026-11-10 17:44:59 run_pets.py INFO    : Starting training iteration 82.
+2026-11-10 17:45:02 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 18
+2026-11-10 17:45:02 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:02 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:02 run_pets.py INFO    : Starting training iteration 83.
+2026-11-10 17:45:03 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:45:03 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:03 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:03 run_pets.py INFO    : Starting training iteration 84.
+2026-11-10 17:45:07 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 27
+2026-11-10 17:45:07 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:07 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:07 run_pets.py INFO    : Starting training iteration 85.
+2026-11-10 17:45:09 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:45:09 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:09 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:09 run_pets.py INFO    : Starting training iteration 86.
+2026-11-10 17:45:12 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 22
+2026-11-10 17:45:12 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:12 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:12 run_pets.py INFO    : Starting training iteration 87.
+2026-11-10 17:45:14 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:45:14 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:14 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:14 run_pets.py INFO    : Starting training iteration 88.
+2026-11-10 17:45:15 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:45:15 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:15 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:15 run_pets.py INFO    : Starting training iteration 89.
+2026-11-10 17:45:17 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:45:17 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:17 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:17 run_pets.py INFO    : Starting training iteration 90.
+2026-11-10 17:45:19 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:45:19 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:19 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:19 run_pets.py INFO    : Starting training iteration 91.
+2026-11-10 17:45:21 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:45:21 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:21 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:21 run_pets.py INFO    : Starting training iteration 92.
+2026-11-10 17:45:24 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:45:24 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:24 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:24 run_pets.py INFO    : Starting training iteration 93.
+2026-11-10 17:45:26 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:45:26 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:26 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:26 run_pets.py INFO    : Starting training iteration 94.
+2026-11-10 17:45:28 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:45:28 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:28 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:28 run_pets.py INFO    : Starting training iteration 95.
+2026-11-10 17:45:30 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:45:30 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:30 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:30 run_pets.py INFO    : Starting training iteration 96.
+2026-11-10 17:45:31 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:45:31 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:32 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:32 run_pets.py INFO    : Starting training iteration 97.
+2026-11-10 17:45:33 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:45:33 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:33 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:33 run_pets.py INFO    : Starting training iteration 98.
+2026-11-10 17:45:36 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:45:36 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:36 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:36 run_pets.py INFO    : Starting training iteration 99.
+2026-11-10 17:45:38 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:45:38 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:38 run_pets.py INFO    : ####################################################################
+2026-11-10 17:45:38 run_pets.py INFO    : Starting training iteration 100.
+2026-11-10 17:45:39 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:45:39 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:45:39 run_pets.py INFO    : Test episode 0
+2026-11-10 17:45:56 run_pets.py INFO    : Test episode 9
+2026-11-10 17:46:17 run_pets.py INFO    : Test episode 19
+2026-11-10 17:46:19 run_pets.py INFO    : Test success CEM + MPC: 0.7
+2026-11-10 17:46:19 run_pets.py INFO    : Test episode 0
+2026-11-10 17:46:35 run_pets.py INFO    : Test episode 9
+2026-11-10 17:46:49 run_pets.py INFO    : Test episode 19
+2026-11-10 17:46:51 run_pets.py INFO    : Test success Random + MPC: 0.55
+2026-11-10 17:46:51 run_pets.py INFO    : ####################################################################
+2026-11-10 17:46:51 run_pets.py INFO    : Starting training iteration 101.
+2026-11-10 17:46:53 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:46:53 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:46:53 run_pets.py INFO    : ####################################################################
+2026-11-10 17:46:53 run_pets.py INFO    : Starting training iteration 102.
+2026-11-10 17:46:55 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:46:55 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:46:55 run_pets.py INFO    : ####################################################################
+2026-11-10 17:46:55 run_pets.py INFO    : Starting training iteration 103.
+2026-11-10 17:46:58 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:46:58 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:46:58 run_pets.py INFO    : ####################################################################
+2026-11-10 17:46:58 run_pets.py INFO    : Starting training iteration 104.
+2026-11-10 17:47:00 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:47:00 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:00 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:00 run_pets.py INFO    : Starting training iteration 105.
+2026-11-10 17:47:02 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:47:02 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:02 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:02 run_pets.py INFO    : Starting training iteration 106.
+2026-11-10 17:47:04 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:47:04 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:04 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:04 run_pets.py INFO    : Starting training iteration 107.
+2026-11-10 17:47:06 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:47:06 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:06 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:06 run_pets.py INFO    : Starting training iteration 108.
+2026-11-10 17:47:08 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:47:08 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:08 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:08 run_pets.py INFO    : Starting training iteration 109.
+2026-11-10 17:47:11 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:47:11 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:11 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:11 run_pets.py INFO    : Starting training iteration 110.
+2026-11-10 17:47:12 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:47:12 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:12 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:12 run_pets.py INFO    : Starting training iteration 111.
+2026-11-10 17:47:14 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:47:14 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:14 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:14 run_pets.py INFO    : Starting training iteration 112.
+2026-11-10 17:47:16 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:47:16 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:16 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:16 run_pets.py INFO    : Starting training iteration 113.
+2026-11-10 17:47:18 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:47:18 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:18 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:18 run_pets.py INFO    : Starting training iteration 114.
+2026-11-10 17:47:21 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:47:21 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:21 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:21 run_pets.py INFO    : Starting training iteration 115.
+2026-11-10 17:47:24 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:47:24 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:24 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:24 run_pets.py INFO    : Starting training iteration 116.
+2026-11-10 17:47:26 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 18
+2026-11-10 17:47:26 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:26 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:26 run_pets.py INFO    : Starting training iteration 117.
+2026-11-10 17:47:27 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:47:27 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:28 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:28 run_pets.py INFO    : Starting training iteration 118.
+2026-11-10 17:47:29 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:47:29 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:29 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:29 run_pets.py INFO    : Starting training iteration 119.
+2026-11-10 17:47:31 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:47:31 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:31 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:31 run_pets.py INFO    : Starting training iteration 120.
+2026-11-10 17:47:34 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 18
+2026-11-10 17:47:34 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:34 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:34 run_pets.py INFO    : Starting training iteration 121.
+2026-11-10 17:47:35 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:47:35 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:35 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:35 run_pets.py INFO    : Starting training iteration 122.
+2026-11-10 17:47:37 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:47:37 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:37 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:37 run_pets.py INFO    : Starting training iteration 123.
+2026-11-10 17:47:39 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:47:39 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:39 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:39 run_pets.py INFO    : Starting training iteration 124.
+2026-11-10 17:47:40 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:47:40 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:40 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:40 run_pets.py INFO    : Starting training iteration 125.
+2026-11-10 17:47:42 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:47:42 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:42 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:42 run_pets.py INFO    : Starting training iteration 126.
+2026-11-10 17:47:43 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:47:43 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:43 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:43 run_pets.py INFO    : Starting training iteration 127.
+2026-11-10 17:47:45 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:47:45 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:45 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:45 run_pets.py INFO    : Starting training iteration 128.
+2026-11-10 17:47:47 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:47:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:47 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:47 run_pets.py INFO    : Starting training iteration 129.
+2026-11-10 17:47:49 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:47:49 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:49 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:49 run_pets.py INFO    : Starting training iteration 130.
+2026-11-10 17:47:50 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:47:50 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:50 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:50 run_pets.py INFO    : Starting training iteration 131.
+2026-11-10 17:47:52 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:47:52 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:52 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:52 run_pets.py INFO    : Starting training iteration 132.
+2026-11-10 17:47:54 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:47:54 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:54 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:54 run_pets.py INFO    : Starting training iteration 133.
+2026-11-10 17:47:56 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:47:56 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:56 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:56 run_pets.py INFO    : Starting training iteration 134.
+2026-11-10 17:47:57 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:47:57 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:57 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:57 run_pets.py INFO    : Starting training iteration 135.
+2026-11-10 17:47:58 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:47:58 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:47:58 run_pets.py INFO    : ####################################################################
+2026-11-10 17:47:58 run_pets.py INFO    : Starting training iteration 136.
+2026-11-10 17:48:00 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:48:00 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:00 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:00 run_pets.py INFO    : Starting training iteration 137.
+2026-11-10 17:48:02 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:48:02 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:02 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:02 run_pets.py INFO    : Starting training iteration 138.
+2026-11-10 17:48:03 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:48:03 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:03 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:03 run_pets.py INFO    : Starting training iteration 139.
+2026-11-10 17:48:05 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:48:05 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:05 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:05 run_pets.py INFO    : Starting training iteration 140.
+2026-11-10 17:48:07 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:48:07 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:07 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:07 run_pets.py INFO    : Starting training iteration 141.
+2026-11-10 17:48:09 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:48:09 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:09 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:09 run_pets.py INFO    : Starting training iteration 142.
+2026-11-10 17:48:11 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:48:11 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:11 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:11 run_pets.py INFO    : Starting training iteration 143.
+2026-11-10 17:48:12 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:48:12 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:12 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:12 run_pets.py INFO    : Starting training iteration 144.
+2026-11-10 17:48:13 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 17:48:13 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:13 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:13 run_pets.py INFO    : Starting training iteration 145.
+2026-11-10 17:48:15 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:48:15 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:15 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:15 run_pets.py INFO    : Starting training iteration 146.
+2026-11-10 17:48:17 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:48:17 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:17 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:17 run_pets.py INFO    : Starting training iteration 147.
+2026-11-10 17:48:18 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 17:48:18 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:18 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:18 run_pets.py INFO    : Starting training iteration 148.
+2026-11-10 17:48:20 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:48:20 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:20 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:20 run_pets.py INFO    : Starting training iteration 149.
+2026-11-10 17:48:23 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:48:23 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:23 run_pets.py INFO    : ####################################################################
+2026-11-10 17:48:23 run_pets.py INFO    : Starting training iteration 150.
+2026-11-10 17:48:25 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:48:25 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:48:25 run_pets.py INFO    : Test episode 0
+2026-11-10 17:48:40 run_pets.py INFO    : Test episode 9
+2026-11-10 17:48:55 run_pets.py INFO    : Test episode 19
+2026-11-10 17:48:57 run_pets.py INFO    : Test success CEM + MPC: 1.0
+2026-11-10 17:48:57 run_pets.py INFO    : Test episode 0
+2026-11-10 17:49:08 run_pets.py INFO    : Test episode 9
+2026-11-10 17:49:20 run_pets.py INFO    : Test episode 19
+2026-11-10 17:49:21 run_pets.py INFO    : Test success Random + MPC: 0.65
+2026-11-10 17:49:21 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:21 run_pets.py INFO    : Starting training iteration 151.
+2026-11-10 17:49:23 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:49:23 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:23 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:23 run_pets.py INFO    : Starting training iteration 152.
+2026-11-10 17:49:25 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:49:25 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:25 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:25 run_pets.py INFO    : Starting training iteration 153.
+2026-11-10 17:49:26 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:49:26 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:26 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:26 run_pets.py INFO    : Starting training iteration 154.
+2026-11-10 17:49:28 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:49:28 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:28 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:28 run_pets.py INFO    : Starting training iteration 155.
+2026-11-10 17:49:29 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:49:29 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:29 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:29 run_pets.py INFO    : Starting training iteration 156.
+2026-11-10 17:49:31 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:49:31 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:31 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:31 run_pets.py INFO    : Starting training iteration 157.
+2026-11-10 17:49:33 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:49:33 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:33 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:33 run_pets.py INFO    : Starting training iteration 158.
+2026-11-10 17:49:34 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:49:34 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:34 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:34 run_pets.py INFO    : Starting training iteration 159.
+2026-11-10 17:49:35 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:49:35 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:35 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:35 run_pets.py INFO    : Starting training iteration 160.
+2026-11-10 17:49:36 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:49:36 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:36 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:36 run_pets.py INFO    : Starting training iteration 161.
+2026-11-10 17:49:38 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:49:38 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:38 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:38 run_pets.py INFO    : Starting training iteration 162.
+2026-11-10 17:49:39 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 17:49:39 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:39 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:39 run_pets.py INFO    : Starting training iteration 163.
+2026-11-10 17:49:40 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:49:40 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:40 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:40 run_pets.py INFO    : Starting training iteration 164.
+2026-11-10 17:49:42 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:49:42 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:42 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:42 run_pets.py INFO    : Starting training iteration 165.
+2026-11-10 17:49:44 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:49:44 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:44 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:44 run_pets.py INFO    : Starting training iteration 166.
+2026-11-10 17:49:46 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:49:46 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:46 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:46 run_pets.py INFO    : Starting training iteration 167.
+2026-11-10 17:49:47 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:49:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:47 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:47 run_pets.py INFO    : Starting training iteration 168.
+2026-11-10 17:49:49 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:49:49 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:49 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:49 run_pets.py INFO    : Starting training iteration 169.
+2026-11-10 17:49:51 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:49:51 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:51 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:51 run_pets.py INFO    : Starting training iteration 170.
+2026-11-10 17:49:52 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:49:52 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:52 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:52 run_pets.py INFO    : Starting training iteration 171.
+2026-11-10 17:49:53 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 17:49:53 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:53 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:53 run_pets.py INFO    : Starting training iteration 172.
+2026-11-10 17:49:56 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:49:56 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:56 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:56 run_pets.py INFO    : Starting training iteration 173.
+2026-11-10 17:49:57 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:49:57 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:57 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:57 run_pets.py INFO    : Starting training iteration 174.
+2026-11-10 17:49:59 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:49:59 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:49:59 run_pets.py INFO    : ####################################################################
+2026-11-10 17:49:59 run_pets.py INFO    : Starting training iteration 175.
+2026-11-10 17:50:00 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:50:00 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:00 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:00 run_pets.py INFO    : Starting training iteration 176.
+2026-11-10 17:50:01 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:50:01 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:01 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:01 run_pets.py INFO    : Starting training iteration 177.
+2026-11-10 17:50:03 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:50:03 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:03 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:03 run_pets.py INFO    : Starting training iteration 178.
+2026-11-10 17:50:05 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:50:05 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:05 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:05 run_pets.py INFO    : Starting training iteration 179.
+2026-11-10 17:50:07 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:50:07 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:07 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:07 run_pets.py INFO    : Starting training iteration 180.
+2026-11-10 17:50:09 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:50:09 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:09 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:09 run_pets.py INFO    : Starting training iteration 181.
+2026-11-10 17:50:10 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:50:10 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:11 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:11 run_pets.py INFO    : Starting training iteration 182.
+2026-11-10 17:50:12 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:50:12 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:12 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:12 run_pets.py INFO    : Starting training iteration 183.
+2026-11-10 17:50:13 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:50:13 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:13 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:13 run_pets.py INFO    : Starting training iteration 184.
+2026-11-10 17:50:15 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:50:15 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:15 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:15 run_pets.py INFO    : Starting training iteration 185.
+2026-11-10 17:50:17 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:50:17 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:17 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:17 run_pets.py INFO    : Starting training iteration 186.
+2026-11-10 17:50:19 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:50:19 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:19 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:19 run_pets.py INFO    : Starting training iteration 187.
+2026-11-10 17:50:21 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 18
+2026-11-10 17:50:21 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:21 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:21 run_pets.py INFO    : Starting training iteration 188.
+2026-11-10 17:50:23 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:50:23 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:23 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:23 run_pets.py INFO    : Starting training iteration 189.
+2026-11-10 17:50:25 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:50:25 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:25 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:25 run_pets.py INFO    : Starting training iteration 190.
+2026-11-10 17:50:27 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:50:27 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:27 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:27 run_pets.py INFO    : Starting training iteration 191.
+2026-11-10 17:50:29 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:50:29 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:30 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:30 run_pets.py INFO    : Starting training iteration 192.
+2026-11-10 17:50:31 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 17:50:31 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:31 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:31 run_pets.py INFO    : Starting training iteration 193.
+2026-11-10 17:50:32 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:50:32 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:32 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:32 run_pets.py INFO    : Starting training iteration 194.
+2026-11-10 17:50:34 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:50:34 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:34 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:34 run_pets.py INFO    : Starting training iteration 195.
+2026-11-10 17:50:36 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:50:36 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:36 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:36 run_pets.py INFO    : Starting training iteration 196.
+2026-11-10 17:50:38 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:50:38 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:38 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:38 run_pets.py INFO    : Starting training iteration 197.
+2026-11-10 17:50:40 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:50:40 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:40 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:40 run_pets.py INFO    : Starting training iteration 198.
+2026-11-10 17:50:41 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:50:41 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:41 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:41 run_pets.py INFO    : Starting training iteration 199.
+2026-11-10 17:50:42 run_pets.py INFO    : Rewards obtained: [-5.0], Rollout Length: 7
+2026-11-10 17:50:42 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:42 run_pets.py INFO    : ####################################################################
+2026-11-10 17:50:42 run_pets.py INFO    : Starting training iteration 200.
+2026-11-10 17:50:44 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:50:44 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:50:44 run_pets.py INFO    : Test episode 0
+2026-11-10 17:51:03 run_pets.py INFO    : Test episode 9
+2026-11-10 17:51:19 run_pets.py INFO    : Test episode 19
+2026-11-10 17:51:21 run_pets.py INFO    : Test success CEM + MPC: 0.7
+2026-11-10 17:51:21 run_pets.py INFO    : Test episode 0
+2026-11-10 17:51:33 run_pets.py INFO    : Test episode 9
+2026-11-10 17:51:44 run_pets.py INFO    : Test episode 19
+2026-11-10 17:51:46 run_pets.py INFO    : Test success Random + MPC: 0.55
+2026-11-10 17:51:46 run_pets.py INFO    : ####################################################################
+2026-11-10 17:51:46 run_pets.py INFO    : Starting training iteration 201.
+2026-11-10 17:51:47 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:51:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:51:47 run_pets.py INFO    : ####################################################################
+2026-11-10 17:51:47 run_pets.py INFO    : Starting training iteration 202.
+2026-11-10 17:51:48 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:51:48 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:51:48 run_pets.py INFO    : ####################################################################
+2026-11-10 17:51:48 run_pets.py INFO    : Starting training iteration 203.
+2026-11-10 17:51:49 run_pets.py INFO    : Rewards obtained: [-5.0], Rollout Length: 7
+2026-11-10 17:51:49 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:51:49 run_pets.py INFO    : ####################################################################
+2026-11-10 17:51:49 run_pets.py INFO    : Starting training iteration 204.
+2026-11-10 17:51:51 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:51:51 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:51:51 run_pets.py INFO    : ####################################################################
+2026-11-10 17:51:51 run_pets.py INFO    : Starting training iteration 205.
+2026-11-10 17:51:54 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 21
+2026-11-10 17:51:54 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:51:54 run_pets.py INFO    : ####################################################################
+2026-11-10 17:51:54 run_pets.py INFO    : Starting training iteration 206.
+2026-11-10 17:51:55 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:51:55 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:51:56 run_pets.py INFO    : ####################################################################
+2026-11-10 17:51:56 run_pets.py INFO    : Starting training iteration 207.
+2026-11-10 17:51:57 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:51:57 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:51:57 run_pets.py INFO    : ####################################################################
+2026-11-10 17:51:57 run_pets.py INFO    : Starting training iteration 208.
+2026-11-10 17:51:59 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:51:59 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:51:59 run_pets.py INFO    : ####################################################################
+2026-11-10 17:51:59 run_pets.py INFO    : Starting training iteration 209.
+2026-11-10 17:52:01 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:52:01 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:01 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:01 run_pets.py INFO    : Starting training iteration 210.
+2026-11-10 17:52:02 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:52:02 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:02 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:02 run_pets.py INFO    : Starting training iteration 211.
+2026-11-10 17:52:04 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:52:04 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:04 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:04 run_pets.py INFO    : Starting training iteration 212.
+2026-11-10 17:52:06 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:52:06 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:06 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:06 run_pets.py INFO    : Starting training iteration 213.
+2026-11-10 17:52:08 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:52:08 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:08 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:08 run_pets.py INFO    : Starting training iteration 214.
+2026-11-10 17:52:10 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:52:10 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:10 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:10 run_pets.py INFO    : Starting training iteration 215.
+2026-11-10 17:52:13 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 22
+2026-11-10 17:52:13 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:13 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:13 run_pets.py INFO    : Starting training iteration 216.
+2026-11-10 17:52:14 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:52:14 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:14 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:14 run_pets.py INFO    : Starting training iteration 217.
+2026-11-10 17:52:16 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:52:16 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:16 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:16 run_pets.py INFO    : Starting training iteration 218.
+2026-11-10 17:52:17 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:52:17 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:17 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:17 run_pets.py INFO    : Starting training iteration 219.
+2026-11-10 17:52:19 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:52:19 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:19 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:19 run_pets.py INFO    : Starting training iteration 220.
+2026-11-10 17:52:21 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:52:21 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:21 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:21 run_pets.py INFO    : Starting training iteration 221.
+2026-11-10 17:52:22 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:52:22 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:22 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:22 run_pets.py INFO    : Starting training iteration 222.
+2026-11-10 17:52:24 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:52:24 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:24 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:24 run_pets.py INFO    : Starting training iteration 223.
+2026-11-10 17:52:26 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:52:26 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:26 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:26 run_pets.py INFO    : Starting training iteration 224.
+2026-11-10 17:52:27 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:52:27 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:27 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:27 run_pets.py INFO    : Starting training iteration 225.
+2026-11-10 17:52:29 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:52:29 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:29 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:29 run_pets.py INFO    : Starting training iteration 226.
+2026-11-10 17:52:31 run_pets.py INFO    : Rewards obtained: [-15.0], Rollout Length: 17
+2026-11-10 17:52:31 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:31 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:31 run_pets.py INFO    : Starting training iteration 227.
+2026-11-10 17:52:32 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:52:32 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:32 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:32 run_pets.py INFO    : Starting training iteration 228.
+2026-11-10 17:52:34 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:52:34 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:34 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:34 run_pets.py INFO    : Starting training iteration 229.
+2026-11-10 17:52:35 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:52:35 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:35 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:35 run_pets.py INFO    : Starting training iteration 230.
+2026-11-10 17:52:36 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:52:36 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:36 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:36 run_pets.py INFO    : Starting training iteration 231.
+2026-11-10 17:52:38 run_pets.py INFO    : Rewards obtained: [-15.0], Rollout Length: 17
+2026-11-10 17:52:38 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:39 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:39 run_pets.py INFO    : Starting training iteration 232.
+2026-11-10 17:52:40 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:52:40 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:40 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:40 run_pets.py INFO    : Starting training iteration 233.
+2026-11-10 17:52:43 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:52:43 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:43 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:43 run_pets.py INFO    : Starting training iteration 234.
+2026-11-10 17:52:45 run_pets.py INFO    : Rewards obtained: [-15.0], Rollout Length: 17
+2026-11-10 17:52:45 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:45 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:45 run_pets.py INFO    : Starting training iteration 235.
+2026-11-10 17:52:47 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:52:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:47 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:47 run_pets.py INFO    : Starting training iteration 236.
+2026-11-10 17:52:48 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:52:48 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:48 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:48 run_pets.py INFO    : Starting training iteration 237.
+2026-11-10 17:52:50 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:52:50 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:50 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:50 run_pets.py INFO    : Starting training iteration 238.
+2026-11-10 17:52:52 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:52:52 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:52 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:52 run_pets.py INFO    : Starting training iteration 239.
+2026-11-10 17:52:53 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:52:53 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:53 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:53 run_pets.py INFO    : Starting training iteration 240.
+2026-11-10 17:52:54 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:52:54 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:54 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:54 run_pets.py INFO    : Starting training iteration 241.
+2026-11-10 17:52:55 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:52:55 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:55 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:55 run_pets.py INFO    : Starting training iteration 242.
+2026-11-10 17:52:57 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:52:57 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:57 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:57 run_pets.py INFO    : Starting training iteration 243.
+2026-11-10 17:52:58 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:52:58 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:52:58 run_pets.py INFO    : ####################################################################
+2026-11-10 17:52:58 run_pets.py INFO    : Starting training iteration 244.
+2026-11-10 17:53:00 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:53:00 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:53:00 run_pets.py INFO    : ####################################################################
+2026-11-10 17:53:00 run_pets.py INFO    : Starting training iteration 245.
+2026-11-10 17:53:01 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:53:01 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:53:01 run_pets.py INFO    : ####################################################################
+2026-11-10 17:53:01 run_pets.py INFO    : Starting training iteration 246.
+2026-11-10 17:53:03 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:53:03 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:53:03 run_pets.py INFO    : ####################################################################
+2026-11-10 17:53:03 run_pets.py INFO    : Starting training iteration 247.
+2026-11-10 17:53:05 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:53:05 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:53:05 run_pets.py INFO    : ####################################################################
+2026-11-10 17:53:05 run_pets.py INFO    : Starting training iteration 248.
+2026-11-10 17:53:07 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:53:07 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:53:07 run_pets.py INFO    : ####################################################################
+2026-11-10 17:53:07 run_pets.py INFO    : Starting training iteration 249.
+2026-11-10 17:53:09 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:53:09 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:53:09 run_pets.py INFO    : ####################################################################
+2026-11-10 17:53:09 run_pets.py INFO    : Starting training iteration 250.
+2026-11-10 17:53:10 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:53:10 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:53:10 run_pets.py INFO    : Test episode 0
+2026-11-10 17:53:24 run_pets.py INFO    : Test episode 9
+2026-11-10 17:53:41 run_pets.py INFO    : Test episode 19
+2026-11-10 17:53:44 run_pets.py INFO    : Test success CEM + MPC: 0.8
+2026-11-10 17:53:44 run_pets.py INFO    : Test episode 0
+2026-11-10 17:53:54 run_pets.py INFO    : Test episode 9
+2026-11-10 17:54:10 run_pets.py INFO    : Test episode 19
+2026-11-10 17:54:11 run_pets.py INFO    : Test success Random + MPC: 0.55
+2026-11-10 17:54:11 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:11 run_pets.py INFO    : Starting training iteration 251.
+2026-11-10 17:54:13 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 18
+2026-11-10 17:54:13 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:13 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:13 run_pets.py INFO    : Starting training iteration 252.
+2026-11-10 17:54:15 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:54:15 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:15 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:15 run_pets.py INFO    : Starting training iteration 253.
+2026-11-10 17:54:17 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:54:17 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:17 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:17 run_pets.py INFO    : Starting training iteration 254.
+2026-11-10 17:54:18 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:54:18 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:18 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:18 run_pets.py INFO    : Starting training iteration 255.
+2026-11-10 17:54:19 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:54:19 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:19 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:19 run_pets.py INFO    : Starting training iteration 256.
+2026-11-10 17:54:20 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:54:20 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:20 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:20 run_pets.py INFO    : Starting training iteration 257.
+2026-11-10 17:54:22 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:54:22 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:22 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:22 run_pets.py INFO    : Starting training iteration 258.
+2026-11-10 17:54:23 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 17:54:23 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:23 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:23 run_pets.py INFO    : Starting training iteration 259.
+2026-11-10 17:54:26 run_pets.py INFO    : Rewards obtained: [-15.0], Rollout Length: 17
+2026-11-10 17:54:26 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:26 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:26 run_pets.py INFO    : Starting training iteration 260.
+2026-11-10 17:54:28 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:54:28 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:28 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:28 run_pets.py INFO    : Starting training iteration 261.
+2026-11-10 17:54:30 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:54:30 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:30 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:30 run_pets.py INFO    : Starting training iteration 262.
+2026-11-10 17:54:32 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:54:32 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:32 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:32 run_pets.py INFO    : Starting training iteration 263.
+2026-11-10 17:54:34 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:54:34 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:34 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:34 run_pets.py INFO    : Starting training iteration 264.
+2026-11-10 17:54:36 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:54:36 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:36 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:36 run_pets.py INFO    : Starting training iteration 265.
+2026-11-10 17:54:38 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:54:38 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:38 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:38 run_pets.py INFO    : Starting training iteration 266.
+2026-11-10 17:54:40 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:54:40 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:40 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:40 run_pets.py INFO    : Starting training iteration 267.
+2026-11-10 17:54:42 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:54:42 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:42 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:42 run_pets.py INFO    : Starting training iteration 268.
+2026-11-10 17:54:43 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:54:43 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:43 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:43 run_pets.py INFO    : Starting training iteration 269.
+2026-11-10 17:54:45 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:54:45 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:45 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:45 run_pets.py INFO    : Starting training iteration 270.
+2026-11-10 17:54:47 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:54:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:47 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:47 run_pets.py INFO    : Starting training iteration 271.
+2026-11-10 17:54:49 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:54:49 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:49 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:49 run_pets.py INFO    : Starting training iteration 272.
+2026-11-10 17:54:52 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 21
+2026-11-10 17:54:52 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:52 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:52 run_pets.py INFO    : Starting training iteration 273.
+2026-11-10 17:54:54 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:54:54 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:54 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:54 run_pets.py INFO    : Starting training iteration 274.
+2026-11-10 17:54:56 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:54:56 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:56 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:56 run_pets.py INFO    : Starting training iteration 275.
+2026-11-10 17:54:57 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:54:57 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:57 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:57 run_pets.py INFO    : Starting training iteration 276.
+2026-11-10 17:54:59 run_pets.py INFO    : Rewards obtained: [-15.0], Rollout Length: 17
+2026-11-10 17:54:59 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:54:59 run_pets.py INFO    : ####################################################################
+2026-11-10 17:54:59 run_pets.py INFO    : Starting training iteration 277.
+2026-11-10 17:55:02 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:55:02 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:02 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:02 run_pets.py INFO    : Starting training iteration 278.
+2026-11-10 17:55:03 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:55:03 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:03 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:03 run_pets.py INFO    : Starting training iteration 279.
+2026-11-10 17:55:04 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:55:04 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:04 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:04 run_pets.py INFO    : Starting training iteration 280.
+2026-11-10 17:55:06 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:55:06 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:06 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:06 run_pets.py INFO    : Starting training iteration 281.
+2026-11-10 17:55:08 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:55:08 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:08 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:08 run_pets.py INFO    : Starting training iteration 282.
+2026-11-10 17:55:10 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:55:10 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:10 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:10 run_pets.py INFO    : Starting training iteration 283.
+2026-11-10 17:55:12 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:55:12 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:12 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:12 run_pets.py INFO    : Starting training iteration 284.
+2026-11-10 17:55:13 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:55:13 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:14 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:14 run_pets.py INFO    : Starting training iteration 285.
+2026-11-10 17:55:14 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 17:55:14 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:14 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:14 run_pets.py INFO    : Starting training iteration 286.
+2026-11-10 17:55:17 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:55:17 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:18 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:18 run_pets.py INFO    : Starting training iteration 287.
+2026-11-10 17:55:19 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:55:19 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:19 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:19 run_pets.py INFO    : Starting training iteration 288.
+2026-11-10 17:55:21 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:55:21 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:21 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:21 run_pets.py INFO    : Starting training iteration 289.
+2026-11-10 17:55:22 run_pets.py INFO    : Rewards obtained: [-5.0], Rollout Length: 7
+2026-11-10 17:55:22 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:22 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:22 run_pets.py INFO    : Starting training iteration 290.
+2026-11-10 17:55:23 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:55:23 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:23 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:23 run_pets.py INFO    : Starting training iteration 291.
+2026-11-10 17:55:25 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:55:25 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:25 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:25 run_pets.py INFO    : Starting training iteration 292.
+2026-11-10 17:55:28 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 21
+2026-11-10 17:55:28 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:28 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:28 run_pets.py INFO    : Starting training iteration 293.
+2026-11-10 17:55:29 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:55:29 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:29 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:29 run_pets.py INFO    : Starting training iteration 294.
+2026-11-10 17:55:32 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:55:32 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:32 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:32 run_pets.py INFO    : Starting training iteration 295.
+2026-11-10 17:55:33 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:55:33 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:33 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:33 run_pets.py INFO    : Starting training iteration 296.
+2026-11-10 17:55:35 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:55:35 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:35 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:35 run_pets.py INFO    : Starting training iteration 297.
+2026-11-10 17:55:37 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:55:37 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:37 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:37 run_pets.py INFO    : Starting training iteration 298.
+2026-11-10 17:55:39 run_pets.py INFO    : Rewards obtained: [-17.0], Rollout Length: 19
+2026-11-10 17:55:39 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:39 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:39 run_pets.py INFO    : Starting training iteration 299.
+2026-11-10 17:55:41 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:55:41 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:41 run_pets.py INFO    : ####################################################################
+2026-11-10 17:55:41 run_pets.py INFO    : Starting training iteration 300.
+2026-11-10 17:55:43 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:55:43 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:55:43 run_pets.py INFO    : Test episode 0
+2026-11-10 17:55:58 run_pets.py INFO    : Test episode 9
+2026-11-10 17:56:15 run_pets.py INFO    : Test episode 19
+2026-11-10 17:56:16 run_pets.py INFO    : Test success CEM + MPC: 0.9
+2026-11-10 17:56:16 run_pets.py INFO    : Test episode 0
+2026-11-10 17:56:31 run_pets.py INFO    : Test episode 9
+2026-11-10 17:56:44 run_pets.py INFO    : Test episode 19
+2026-11-10 17:56:45 run_pets.py INFO    : Test success Random + MPC: 0.6
+2026-11-10 17:56:45 run_pets.py INFO    : ####################################################################
+2026-11-10 17:56:45 run_pets.py INFO    : Starting training iteration 301.
+2026-11-10 17:56:47 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:56:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:56:47 run_pets.py INFO    : ####################################################################
+2026-11-10 17:56:47 run_pets.py INFO    : Starting training iteration 302.
+2026-11-10 17:56:49 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:56:49 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:56:49 run_pets.py INFO    : ####################################################################
+2026-11-10 17:56:49 run_pets.py INFO    : Starting training iteration 303.
+2026-11-10 17:56:50 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:56:50 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:56:50 run_pets.py INFO    : ####################################################################
+2026-11-10 17:56:50 run_pets.py INFO    : Starting training iteration 304.
+2026-11-10 17:56:52 run_pets.py INFO    : Rewards obtained: [-15.0], Rollout Length: 17
+2026-11-10 17:56:52 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:56:52 run_pets.py INFO    : ####################################################################
+2026-11-10 17:56:52 run_pets.py INFO    : Starting training iteration 305.
+2026-11-10 17:56:54 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:56:54 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:56:54 run_pets.py INFO    : ####################################################################
+2026-11-10 17:56:54 run_pets.py INFO    : Starting training iteration 306.
+2026-11-10 17:56:56 run_pets.py INFO    : Rewards obtained: [-15.0], Rollout Length: 17
+2026-11-10 17:56:56 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:56:56 run_pets.py INFO    : ####################################################################
+2026-11-10 17:56:56 run_pets.py INFO    : Starting training iteration 307.
+2026-11-10 17:56:57 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 17:56:57 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:56:57 run_pets.py INFO    : ####################################################################
+2026-11-10 17:56:57 run_pets.py INFO    : Starting training iteration 308.
+2026-11-10 17:56:58 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:56:58 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:56:58 run_pets.py INFO    : ####################################################################
+2026-11-10 17:56:58 run_pets.py INFO    : Starting training iteration 309.
+2026-11-10 17:57:00 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:57:00 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:00 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:00 run_pets.py INFO    : Starting training iteration 310.
+2026-11-10 17:57:01 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:57:01 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:01 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:01 run_pets.py INFO    : Starting training iteration 311.
+2026-11-10 17:57:03 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:57:03 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:03 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:03 run_pets.py INFO    : Starting training iteration 312.
+2026-11-10 17:57:05 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:57:05 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:05 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:05 run_pets.py INFO    : Starting training iteration 313.
+2026-11-10 17:57:06 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:57:06 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:06 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:06 run_pets.py INFO    : Starting training iteration 314.
+2026-11-10 17:57:08 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:57:08 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:08 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:08 run_pets.py INFO    : Starting training iteration 315.
+2026-11-10 17:57:09 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:57:09 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:09 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:09 run_pets.py INFO    : Starting training iteration 316.
+2026-11-10 17:57:11 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:57:11 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:11 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:11 run_pets.py INFO    : Starting training iteration 317.
+2026-11-10 17:57:12 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:57:12 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:12 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:12 run_pets.py INFO    : Starting training iteration 318.
+2026-11-10 17:57:14 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:57:14 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:14 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:14 run_pets.py INFO    : Starting training iteration 319.
+2026-11-10 17:57:16 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:57:16 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:16 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:16 run_pets.py INFO    : Starting training iteration 320.
+2026-11-10 17:57:18 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:57:18 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:18 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:18 run_pets.py INFO    : Starting training iteration 321.
+2026-11-10 17:57:19 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:57:19 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:19 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:19 run_pets.py INFO    : Starting training iteration 322.
+2026-11-10 17:57:21 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:57:21 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:21 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:21 run_pets.py INFO    : Starting training iteration 323.
+2026-11-10 17:57:22 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:57:22 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:23 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:23 run_pets.py INFO    : Starting training iteration 324.
+2026-11-10 17:57:24 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:57:24 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:24 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:24 run_pets.py INFO    : Starting training iteration 325.
+2026-11-10 17:57:27 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:57:27 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:27 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:27 run_pets.py INFO    : Starting training iteration 326.
+2026-11-10 17:57:29 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:57:29 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:29 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:29 run_pets.py INFO    : Starting training iteration 327.
+2026-11-10 17:57:32 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:57:32 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:32 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:32 run_pets.py INFO    : Starting training iteration 328.
+2026-11-10 17:57:34 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:57:34 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:34 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:34 run_pets.py INFO    : Starting training iteration 329.
+2026-11-10 17:57:36 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:57:36 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:36 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:36 run_pets.py INFO    : Starting training iteration 330.
+2026-11-10 17:57:37 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:57:37 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:37 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:37 run_pets.py INFO    : Starting training iteration 331.
+2026-11-10 17:57:39 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:57:39 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:39 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:39 run_pets.py INFO    : Starting training iteration 332.
+2026-11-10 17:57:41 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:57:41 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:41 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:41 run_pets.py INFO    : Starting training iteration 333.
+2026-11-10 17:57:43 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:57:43 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:43 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:43 run_pets.py INFO    : Starting training iteration 334.
+2026-11-10 17:57:45 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:57:45 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:45 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:45 run_pets.py INFO    : Starting training iteration 335.
+2026-11-10 17:57:47 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:57:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:47 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:47 run_pets.py INFO    : Starting training iteration 336.
+2026-11-10 17:57:48 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:57:48 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:48 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:48 run_pets.py INFO    : Starting training iteration 337.
+2026-11-10 17:57:50 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:57:50 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:50 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:50 run_pets.py INFO    : Starting training iteration 338.
+2026-11-10 17:57:51 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:57:51 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:51 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:51 run_pets.py INFO    : Starting training iteration 339.
+2026-11-10 17:57:53 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:57:53 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:53 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:53 run_pets.py INFO    : Starting training iteration 340.
+2026-11-10 17:57:55 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 18
+2026-11-10 17:57:55 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:55 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:55 run_pets.py INFO    : Starting training iteration 341.
+2026-11-10 17:57:56 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:57:56 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:56 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:56 run_pets.py INFO    : Starting training iteration 342.
+2026-11-10 17:57:59 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 17:57:59 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:57:59 run_pets.py INFO    : ####################################################################
+2026-11-10 17:57:59 run_pets.py INFO    : Starting training iteration 343.
+2026-11-10 17:58:00 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:58:00 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:58:00 run_pets.py INFO    : ####################################################################
+2026-11-10 17:58:00 run_pets.py INFO    : Starting training iteration 344.
+2026-11-10 17:58:01 run_pets.py INFO    : Rewards obtained: [-5.0], Rollout Length: 7
+2026-11-10 17:58:01 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:58:01 run_pets.py INFO    : ####################################################################
+2026-11-10 17:58:01 run_pets.py INFO    : Starting training iteration 345.
+2026-11-10 17:58:03 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:58:03 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:58:03 run_pets.py INFO    : ####################################################################
+2026-11-10 17:58:03 run_pets.py INFO    : Starting training iteration 346.
+2026-11-10 17:58:04 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:58:04 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:58:04 run_pets.py INFO    : ####################################################################
+2026-11-10 17:58:04 run_pets.py INFO    : Starting training iteration 347.
+2026-11-10 17:58:07 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 18
+2026-11-10 17:58:07 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:58:07 run_pets.py INFO    : ####################################################################
+2026-11-10 17:58:07 run_pets.py INFO    : Starting training iteration 348.
+2026-11-10 17:58:08 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:58:08 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:58:08 run_pets.py INFO    : ####################################################################
+2026-11-10 17:58:08 run_pets.py INFO    : Starting training iteration 349.
+2026-11-10 17:58:10 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:58:10 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:58:10 run_pets.py INFO    : ####################################################################
+2026-11-10 17:58:10 run_pets.py INFO    : Starting training iteration 350.
+2026-11-10 17:58:11 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:58:11 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:58:11 run_pets.py INFO    : Test episode 0
+2026-11-10 17:58:27 run_pets.py INFO    : Test episode 9
+2026-11-10 17:58:46 run_pets.py INFO    : Test episode 19
+2026-11-10 17:58:48 run_pets.py INFO    : Test success CEM + MPC: 0.7
+2026-11-10 17:58:48 run_pets.py INFO    : Test episode 0
+2026-11-10 17:59:02 run_pets.py INFO    : Test episode 9
+2026-11-10 17:59:18 run_pets.py INFO    : Test episode 19
+2026-11-10 17:59:19 run_pets.py INFO    : Test success Random + MPC: 0.4
+2026-11-10 17:59:19 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:19 run_pets.py INFO    : Starting training iteration 351.
+2026-11-10 17:59:21 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:59:21 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:21 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:21 run_pets.py INFO    : Starting training iteration 352.
+2026-11-10 17:59:23 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:59:23 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:23 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:23 run_pets.py INFO    : Starting training iteration 353.
+2026-11-10 17:59:25 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:59:25 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:25 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:25 run_pets.py INFO    : Starting training iteration 354.
+2026-11-10 17:59:27 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:59:27 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:27 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:27 run_pets.py INFO    : Starting training iteration 355.
+2026-11-10 17:59:29 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 21
+2026-11-10 17:59:29 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:30 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:30 run_pets.py INFO    : Starting training iteration 356.
+2026-11-10 17:59:31 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 17:59:31 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:31 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:31 run_pets.py INFO    : Starting training iteration 357.
+2026-11-10 17:59:32 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:59:32 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:32 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:32 run_pets.py INFO    : Starting training iteration 358.
+2026-11-10 17:59:34 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:59:34 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:34 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:34 run_pets.py INFO    : Starting training iteration 359.
+2026-11-10 17:59:36 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 17:59:36 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:36 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:36 run_pets.py INFO    : Starting training iteration 360.
+2026-11-10 17:59:37 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 17:59:37 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:37 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:37 run_pets.py INFO    : Starting training iteration 361.
+2026-11-10 17:59:39 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 17:59:39 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:39 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:39 run_pets.py INFO    : Starting training iteration 362.
+2026-11-10 17:59:40 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:59:40 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:40 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:40 run_pets.py INFO    : Starting training iteration 363.
+2026-11-10 17:59:42 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 17:59:42 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:42 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:42 run_pets.py INFO    : Starting training iteration 364.
+2026-11-10 17:59:45 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 21
+2026-11-10 17:59:45 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:45 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:45 run_pets.py INFO    : Starting training iteration 365.
+2026-11-10 17:59:47 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 17:59:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:47 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:47 run_pets.py INFO    : Starting training iteration 366.
+2026-11-10 17:59:49 run_pets.py INFO    : Rewards obtained: [-15.0], Rollout Length: 17
+2026-11-10 17:59:49 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:49 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:49 run_pets.py INFO    : Starting training iteration 367.
+2026-11-10 17:59:50 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 17:59:50 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:50 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:50 run_pets.py INFO    : Starting training iteration 368.
+2026-11-10 17:59:52 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 17:59:52 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:52 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:52 run_pets.py INFO    : Starting training iteration 369.
+2026-11-10 17:59:54 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 17:59:54 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:54 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:54 run_pets.py INFO    : Starting training iteration 370.
+2026-11-10 17:59:56 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 17:59:56 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:56 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:56 run_pets.py INFO    : Starting training iteration 371.
+2026-11-10 17:59:59 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 23
+2026-11-10 17:59:59 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 17:59:59 run_pets.py INFO    : ####################################################################
+2026-11-10 17:59:59 run_pets.py INFO    : Starting training iteration 372.
+2026-11-10 18:00:01 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:00:01 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:01 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:01 run_pets.py INFO    : Starting training iteration 373.
+2026-11-10 18:00:02 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 18:00:02 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:02 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:02 run_pets.py INFO    : Starting training iteration 374.
+2026-11-10 18:00:03 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:00:03 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:03 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:03 run_pets.py INFO    : Starting training iteration 375.
+2026-11-10 18:00:06 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 18:00:06 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:06 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:06 run_pets.py INFO    : Starting training iteration 376.
+2026-11-10 18:00:08 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:00:08 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:08 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:08 run_pets.py INFO    : Starting training iteration 377.
+2026-11-10 18:00:09 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:00:09 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:09 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:09 run_pets.py INFO    : Starting training iteration 378.
+2026-11-10 18:00:11 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:00:11 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:11 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:11 run_pets.py INFO    : Starting training iteration 379.
+2026-11-10 18:00:12 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:00:12 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:12 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:12 run_pets.py INFO    : Starting training iteration 380.
+2026-11-10 18:00:14 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:00:14 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:14 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:14 run_pets.py INFO    : Starting training iteration 381.
+2026-11-10 18:00:17 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 18:00:17 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:17 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:17 run_pets.py INFO    : Starting training iteration 382.
+2026-11-10 18:00:19 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 19
+2026-11-10 18:00:19 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:19 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:19 run_pets.py INFO    : Starting training iteration 383.
+2026-11-10 18:00:20 run_pets.py INFO    : Rewards obtained: [-5.0], Rollout Length: 7
+2026-11-10 18:00:20 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:20 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:20 run_pets.py INFO    : Starting training iteration 384.
+2026-11-10 18:00:21 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:00:21 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:21 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:21 run_pets.py INFO    : Starting training iteration 385.
+2026-11-10 18:00:22 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:00:22 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:22 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:22 run_pets.py INFO    : Starting training iteration 386.
+2026-11-10 18:00:24 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:00:24 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:24 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:24 run_pets.py INFO    : Starting training iteration 387.
+2026-11-10 18:00:26 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:00:26 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:26 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:26 run_pets.py INFO    : Starting training iteration 388.
+2026-11-10 18:00:27 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 18:00:27 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:27 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:27 run_pets.py INFO    : Starting training iteration 389.
+2026-11-10 18:00:28 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 18:00:28 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:28 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:28 run_pets.py INFO    : Starting training iteration 390.
+2026-11-10 18:00:30 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:00:30 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:30 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:30 run_pets.py INFO    : Starting training iteration 391.
+2026-11-10 18:00:31 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:00:31 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:31 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:31 run_pets.py INFO    : Starting training iteration 392.
+2026-11-10 18:00:32 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:00:32 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:32 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:32 run_pets.py INFO    : Starting training iteration 393.
+2026-11-10 18:00:35 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 18:00:35 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:35 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:35 run_pets.py INFO    : Starting training iteration 394.
+2026-11-10 18:00:36 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 18:00:36 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:36 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:36 run_pets.py INFO    : Starting training iteration 395.
+2026-11-10 18:00:37 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:00:37 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:37 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:37 run_pets.py INFO    : Starting training iteration 396.
+2026-11-10 18:00:40 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 18:00:40 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:40 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:40 run_pets.py INFO    : Starting training iteration 397.
+2026-11-10 18:00:41 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 18:00:41 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:41 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:41 run_pets.py INFO    : Starting training iteration 398.
+2026-11-10 18:00:42 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:00:42 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:42 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:42 run_pets.py INFO    : Starting training iteration 399.
+2026-11-10 18:00:45 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 18:00:45 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:45 run_pets.py INFO    : ####################################################################
+2026-11-10 18:00:45 run_pets.py INFO    : Starting training iteration 400.
+2026-11-10 18:00:47 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 18:00:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:00:47 run_pets.py INFO    : Test episode 0
+2026-11-10 18:01:02 run_pets.py INFO    : Test episode 9
+2026-11-10 18:01:19 run_pets.py INFO    : Test episode 19
+2026-11-10 18:01:21 run_pets.py INFO    : Test success CEM + MPC: 0.85
+2026-11-10 18:01:21 run_pets.py INFO    : Test episode 0
+2026-11-10 18:01:34 run_pets.py INFO    : Test episode 9
+2026-11-10 18:01:45 run_pets.py INFO    : Test episode 19
+2026-11-10 18:01:46 run_pets.py INFO    : Test success Random + MPC: 0.7
+2026-11-10 18:01:46 run_pets.py INFO    : ####################################################################
+2026-11-10 18:01:46 run_pets.py INFO    : Starting training iteration 401.
+2026-11-10 18:01:47 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 18:01:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:01:48 run_pets.py INFO    : ####################################################################
+2026-11-10 18:01:48 run_pets.py INFO    : Starting training iteration 402.
+2026-11-10 18:01:50 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 18:01:50 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:01:50 run_pets.py INFO    : ####################################################################
+2026-11-10 18:01:50 run_pets.py INFO    : Starting training iteration 403.
+2026-11-10 18:01:52 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:01:52 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:01:52 run_pets.py INFO    : ####################################################################
+2026-11-10 18:01:52 run_pets.py INFO    : Starting training iteration 404.
+2026-11-10 18:01:53 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:01:53 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:01:53 run_pets.py INFO    : ####################################################################
+2026-11-10 18:01:53 run_pets.py INFO    : Starting training iteration 405.
+2026-11-10 18:01:55 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:01:55 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:01:55 run_pets.py INFO    : ####################################################################
+2026-11-10 18:01:55 run_pets.py INFO    : Starting training iteration 406.
+2026-11-10 18:01:57 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:01:57 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:01:57 run_pets.py INFO    : ####################################################################
+2026-11-10 18:01:57 run_pets.py INFO    : Starting training iteration 407.
+2026-11-10 18:01:58 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:01:58 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:01:58 run_pets.py INFO    : ####################################################################
+2026-11-10 18:01:58 run_pets.py INFO    : Starting training iteration 408.
+2026-11-10 18:02:00 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:02:00 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:00 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:00 run_pets.py INFO    : Starting training iteration 409.
+2026-11-10 18:02:01 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:02:01 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:01 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:01 run_pets.py INFO    : Starting training iteration 410.
+2026-11-10 18:02:03 run_pets.py INFO    : Rewards obtained: [-16.0], Rollout Length: 18
+2026-11-10 18:02:03 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:03 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:03 run_pets.py INFO    : Starting training iteration 411.
+2026-11-10 18:02:05 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:02:05 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:05 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:05 run_pets.py INFO    : Starting training iteration 412.
+2026-11-10 18:02:06 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:02:06 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:06 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:06 run_pets.py INFO    : Starting training iteration 413.
+2026-11-10 18:02:07 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:02:07 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:07 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:07 run_pets.py INFO    : Starting training iteration 414.
+2026-11-10 18:02:09 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:02:09 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:09 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:09 run_pets.py INFO    : Starting training iteration 415.
+2026-11-10 18:02:11 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:02:11 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:11 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:11 run_pets.py INFO    : Starting training iteration 416.
+2026-11-10 18:02:14 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 18:02:14 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:14 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:14 run_pets.py INFO    : Starting training iteration 417.
+2026-11-10 18:02:15 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:02:15 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:15 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:15 run_pets.py INFO    : Starting training iteration 418.
+2026-11-10 18:02:17 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:02:17 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:17 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:17 run_pets.py INFO    : Starting training iteration 419.
+2026-11-10 18:02:19 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 18:02:19 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:19 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:19 run_pets.py INFO    : Starting training iteration 420.
+2026-11-10 18:02:20 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:02:20 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:20 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:20 run_pets.py INFO    : Starting training iteration 421.
+2026-11-10 18:02:21 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 18:02:21 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:21 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:21 run_pets.py INFO    : Starting training iteration 422.
+2026-11-10 18:02:23 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:02:23 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:23 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:23 run_pets.py INFO    : Starting training iteration 423.
+2026-11-10 18:02:25 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:02:25 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:25 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:25 run_pets.py INFO    : Starting training iteration 424.
+2026-11-10 18:02:26 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:02:26 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:26 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:26 run_pets.py INFO    : Starting training iteration 425.
+2026-11-10 18:02:29 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 18
+2026-11-10 18:02:29 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:29 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:29 run_pets.py INFO    : Starting training iteration 426.
+2026-11-10 18:02:30 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:02:30 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:30 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:30 run_pets.py INFO    : Starting training iteration 427.
+2026-11-10 18:02:32 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:02:32 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:32 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:32 run_pets.py INFO    : Starting training iteration 428.
+2026-11-10 18:02:34 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:02:34 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:34 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:34 run_pets.py INFO    : Starting training iteration 429.
+2026-11-10 18:02:36 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:02:36 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:36 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:36 run_pets.py INFO    : Starting training iteration 430.
+2026-11-10 18:02:37 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:02:37 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:37 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:37 run_pets.py INFO    : Starting training iteration 431.
+2026-11-10 18:02:39 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 18:02:39 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:39 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:39 run_pets.py INFO    : Starting training iteration 432.
+2026-11-10 18:02:40 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:02:40 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:40 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:40 run_pets.py INFO    : Starting training iteration 433.
+2026-11-10 18:02:42 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:02:42 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:42 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:42 run_pets.py INFO    : Starting training iteration 434.
+2026-11-10 18:02:43 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:02:43 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:43 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:43 run_pets.py INFO    : Starting training iteration 435.
+2026-11-10 18:02:45 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:02:45 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:45 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:45 run_pets.py INFO    : Starting training iteration 436.
+2026-11-10 18:02:46 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:02:46 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:46 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:46 run_pets.py INFO    : Starting training iteration 437.
+2026-11-10 18:02:47 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:02:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:47 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:47 run_pets.py INFO    : Starting training iteration 438.
+2026-11-10 18:02:49 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:02:49 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:49 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:49 run_pets.py INFO    : Starting training iteration 439.
+2026-11-10 18:02:51 run_pets.py INFO    : Rewards obtained: [-15.0], Rollout Length: 17
+2026-11-10 18:02:51 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:51 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:51 run_pets.py INFO    : Starting training iteration 440.
+2026-11-10 18:02:53 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:02:53 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:53 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:53 run_pets.py INFO    : Starting training iteration 441.
+2026-11-10 18:02:55 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 18:02:55 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:55 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:55 run_pets.py INFO    : Starting training iteration 442.
+2026-11-10 18:02:57 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:02:57 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:02:57 run_pets.py INFO    : ####################################################################
+2026-11-10 18:02:57 run_pets.py INFO    : Starting training iteration 443.
+2026-11-10 18:03:00 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 18:03:00 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:03:00 run_pets.py INFO    : ####################################################################
+2026-11-10 18:03:00 run_pets.py INFO    : Starting training iteration 444.
+2026-11-10 18:03:02 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 18:03:02 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:03:02 run_pets.py INFO    : ####################################################################
+2026-11-10 18:03:02 run_pets.py INFO    : Starting training iteration 445.
+2026-11-10 18:03:03 run_pets.py INFO    : Rewards obtained: [-7.0], Rollout Length: 9
+2026-11-10 18:03:03 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:03:03 run_pets.py INFO    : ####################################################################
+2026-11-10 18:03:03 run_pets.py INFO    : Starting training iteration 446.
+2026-11-10 18:03:05 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:03:05 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:03:05 run_pets.py INFO    : ####################################################################
+2026-11-10 18:03:05 run_pets.py INFO    : Starting training iteration 447.
+2026-11-10 18:03:06 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:03:06 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:03:06 run_pets.py INFO    : ####################################################################
+2026-11-10 18:03:06 run_pets.py INFO    : Starting training iteration 448.
+2026-11-10 18:03:07 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:03:07 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:03:07 run_pets.py INFO    : ####################################################################
+2026-11-10 18:03:07 run_pets.py INFO    : Starting training iteration 449.
+2026-11-10 18:03:09 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:03:09 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:03:09 run_pets.py INFO    : ####################################################################
+2026-11-10 18:03:09 run_pets.py INFO    : Starting training iteration 450.
+2026-11-10 18:03:11 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:03:11 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:03:11 run_pets.py INFO    : Test episode 0
+2026-11-10 18:03:25 run_pets.py INFO    : Test episode 9
+2026-11-10 18:03:40 run_pets.py INFO    : Test episode 19
+2026-11-10 18:03:42 run_pets.py INFO    : Test success CEM + MPC: 1.0
+2026-11-10 18:03:42 run_pets.py INFO    : Test episode 0
+2026-11-10 18:03:52 run_pets.py INFO    : Test episode 9
+2026-11-10 18:04:05 run_pets.py INFO    : Test episode 19
+2026-11-10 18:04:06 run_pets.py INFO    : Test success Random + MPC: 0.65
+2026-11-10 18:04:06 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:06 run_pets.py INFO    : Starting training iteration 451.
+2026-11-10 18:04:08 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:04:08 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:08 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:08 run_pets.py INFO    : Starting training iteration 452.
+2026-11-10 18:04:10 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:04:10 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:10 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:10 run_pets.py INFO    : Starting training iteration 453.
+2026-11-10 18:04:12 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:04:12 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:12 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:12 run_pets.py INFO    : Starting training iteration 454.
+2026-11-10 18:04:13 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:04:13 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:13 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:13 run_pets.py INFO    : Starting training iteration 455.
+2026-11-10 18:04:15 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:04:15 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:15 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:15 run_pets.py INFO    : Starting training iteration 456.
+2026-11-10 18:04:16 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:04:16 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:16 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:16 run_pets.py INFO    : Starting training iteration 457.
+2026-11-10 18:04:18 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:04:18 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:18 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:18 run_pets.py INFO    : Starting training iteration 458.
+2026-11-10 18:04:19 run_pets.py INFO    : Rewards obtained: [-8.0], Rollout Length: 10
+2026-11-10 18:04:19 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:19 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:19 run_pets.py INFO    : Starting training iteration 459.
+2026-11-10 18:04:21 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:04:21 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:21 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:21 run_pets.py INFO    : Starting training iteration 460.
+2026-11-10 18:04:23 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:04:23 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:23 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:23 run_pets.py INFO    : Starting training iteration 461.
+2026-11-10 18:04:24 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:04:24 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:24 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:24 run_pets.py INFO    : Starting training iteration 462.
+2026-11-10 18:04:25 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 18:04:25 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:25 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:25 run_pets.py INFO    : Starting training iteration 463.
+2026-11-10 18:04:27 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:04:27 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:27 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:27 run_pets.py INFO    : Starting training iteration 464.
+2026-11-10 18:04:28 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:04:28 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:28 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:28 run_pets.py INFO    : Starting training iteration 465.
+2026-11-10 18:04:30 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 18:04:30 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:30 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:30 run_pets.py INFO    : Starting training iteration 466.
+2026-11-10 18:04:32 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:04:32 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:32 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:32 run_pets.py INFO    : Starting training iteration 467.
+2026-11-10 18:04:34 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:04:34 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:34 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:34 run_pets.py INFO    : Starting training iteration 468.
+2026-11-10 18:04:35 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:04:35 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:35 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:35 run_pets.py INFO    : Starting training iteration 469.
+2026-11-10 18:04:37 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:04:37 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:37 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:37 run_pets.py INFO    : Starting training iteration 470.
+2026-11-10 18:04:38 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:04:38 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:38 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:38 run_pets.py INFO    : Starting training iteration 471.
+2026-11-10 18:04:41 run_pets.py INFO    : Rewards obtained: [-41.0], Rollout Length: 20
+2026-11-10 18:04:41 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:41 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:41 run_pets.py INFO    : Starting training iteration 472.
+2026-11-10 18:04:43 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:04:43 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:43 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:43 run_pets.py INFO    : Starting training iteration 473.
+2026-11-10 18:04:44 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:04:44 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:44 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:44 run_pets.py INFO    : Starting training iteration 474.
+2026-11-10 18:04:46 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:04:46 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:46 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:46 run_pets.py INFO    : Starting training iteration 475.
+2026-11-10 18:04:47 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:04:47 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:47 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:47 run_pets.py INFO    : Starting training iteration 476.
+2026-11-10 18:04:49 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:04:49 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:49 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:49 run_pets.py INFO    : Starting training iteration 477.
+2026-11-10 18:04:51 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:04:51 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:51 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:51 run_pets.py INFO    : Starting training iteration 478.
+2026-11-10 18:04:52 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:04:52 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:52 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:52 run_pets.py INFO    : Starting training iteration 479.
+2026-11-10 18:04:54 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:04:54 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:54 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:54 run_pets.py INFO    : Starting training iteration 480.
+2026-11-10 18:04:55 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:04:55 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:55 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:55 run_pets.py INFO    : Starting training iteration 481.
+2026-11-10 18:04:57 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:04:57 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:57 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:57 run_pets.py INFO    : Starting training iteration 482.
+2026-11-10 18:04:59 run_pets.py INFO    : Rewards obtained: [-13.0], Rollout Length: 15
+2026-11-10 18:04:59 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:04:59 run_pets.py INFO    : ####################################################################
+2026-11-10 18:04:59 run_pets.py INFO    : Starting training iteration 483.
+2026-11-10 18:05:00 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:05:00 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:00 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:00 run_pets.py INFO    : Starting training iteration 484.
+2026-11-10 18:05:02 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:05:02 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:02 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:02 run_pets.py INFO    : Starting training iteration 485.
+2026-11-10 18:05:04 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:05:04 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:04 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:04 run_pets.py INFO    : Starting training iteration 486.
+2026-11-10 18:05:05 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:05:05 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:05 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:05 run_pets.py INFO    : Starting training iteration 487.
+2026-11-10 18:05:07 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:05:07 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:07 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:07 run_pets.py INFO    : Starting training iteration 488.
+2026-11-10 18:05:08 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:05:08 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:08 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:08 run_pets.py INFO    : Starting training iteration 489.
+2026-11-10 18:05:10 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:05:10 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:10 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:10 run_pets.py INFO    : Starting training iteration 490.
+2026-11-10 18:05:11 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:05:11 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:11 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:11 run_pets.py INFO    : Starting training iteration 491.
+2026-11-10 18:05:13 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:05:13 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:13 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:13 run_pets.py INFO    : Starting training iteration 492.
+2026-11-10 18:05:14 run_pets.py INFO    : Rewards obtained: [-11.0], Rollout Length: 13
+2026-11-10 18:05:14 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:14 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:14 run_pets.py INFO    : Starting training iteration 493.
+2026-11-10 18:05:16 run_pets.py INFO    : Rewards obtained: [-14.0], Rollout Length: 16
+2026-11-10 18:05:16 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:16 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:16 run_pets.py INFO    : Starting training iteration 494.
+2026-11-10 18:05:18 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:05:18 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:18 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:18 run_pets.py INFO    : Starting training iteration 495.
+2026-11-10 18:05:19 run_pets.py INFO    : Rewards obtained: [-9.0], Rollout Length: 11
+2026-11-10 18:05:19 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:19 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:19 run_pets.py INFO    : Starting training iteration 496.
+2026-11-10 18:05:21 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:05:21 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:21 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:21 run_pets.py INFO    : Starting training iteration 497.
+2026-11-10 18:05:22 run_pets.py INFO    : Rewards obtained: [-6.0], Rollout Length: 8
+2026-11-10 18:05:22 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:22 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:22 run_pets.py INFO    : Starting training iteration 498.
+2026-11-10 18:05:23 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:05:23 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:23 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:23 run_pets.py INFO    : Starting training iteration 499.
+2026-11-10 18:05:25 run_pets.py INFO    : Rewards obtained: [-12.0], Rollout Length: 14
+2026-11-10 18:05:25 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:25 run_pets.py INFO    : ####################################################################
+2026-11-10 18:05:25 run_pets.py INFO    : Starting training iteration 500.
+2026-11-10 18:05:27 run_pets.py INFO    : Rewards obtained: [-10.0], Rollout Length: 12
+2026-11-10 18:05:27 mpc.py     INFO    : Train dynamics model for 5 iterations
+2026-11-10 18:05:27 run_pets.py INFO    : Test episode 0
+2026-11-10 18:05:39 run_pets.py INFO    : Test episode 9
+2026-11-10 18:05:55 run_pets.py INFO    : Test episode 19
+2026-11-10 18:05:56 run_pets.py INFO    : Test success CEM + MPC: 1.0
+2026-11-10 18:05:56 run_pets.py INFO    : Test episode 0
+2026-11-10 18:06:06 run_pets.py INFO    : Test episode 9
+2026-11-10 18:06:17 run_pets.py INFO    : Test episode 19
+2026-11-10 18:06:18 run_pets.py INFO    : Test success Random + MPC: 0.85
+2026-11-10 18:06:18 run_pets.py INFO    : ### Q1.3.2: Plot CEM + MPC vs. Random Policy + MPC over training

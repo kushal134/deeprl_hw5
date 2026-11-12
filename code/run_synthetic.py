@@ -84,10 +84,31 @@ class TrainerTD3:
         # Remember: the model takes the first STATE_DIM entries of the state (no goal) and
         # predicts the *difference* s' - s.
         ### BEGIN STUDENT SOLUTION - 1.4 ###
-        new_state = ...
-        raise NotImplementedError("Problem 1.4: get_synthetic_transition")
-        ### END STUDENT SOLUTION - 1.4 ###
+        state_np = np.asarray(state, dtype=np.float32)
+
+        state_t = torch.as_tensor(state_np[:STATE_DIM],dtype=torch.float32,device=self.model.device,).unsqueeze(0)
+
+        action_t = torch.as_tensor(action,dtype=torch.float32,device=self.model.device,).unsqueeze(0)
+
+        model_input = torch.cat([state_t, action_t], dim=-1)
+
+        net_idx = np.random.randint(self.model.num_nets)
+
+        with torch.no_grad():
+            mean, logvar = self.model(model_input)[net_idx]
+
+            delta = mean + torch.randn_like(mean) * torch.exp(0.5 * logvar)
+
+            next_physical_state = state_t + delta
+
+        next_physical_state = next_physical_state.squeeze(0).cpu().numpy()
+
+        new_state = np.concatenate([next_physical_state, state_np[STATE_DIM:],])
+
         return self.sim.step_state(new_state)
+       
+        ### END STUDENT SOLUTION - 1.4 ###
+      
 
     def train_td3_with_mix(self, synthetic_ratio):
         """Problem 1.4.1: each step is synthetic with probability synthetic_ratio, else real."""

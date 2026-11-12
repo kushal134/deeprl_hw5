@@ -1,0 +1,7 @@
+code/.venv/
+__pycache__/
+*.pyc
+.DS_Store
+code/log1.txt
+code/log2.txt
+code/log3.txt

@@ -56,7 +56,9 @@ class PENN(nn.Module):
     def get_loss(self, targ, mean, logvar):
         """Gaussian negative log likelihood of `targ` under N(mean, exp(logvar))."""
         ### BEGIN STUDENT SOLUTION - 1.2 ###
-        raise NotImplementedError("Problem 1.2: PENN.get_loss")
+        ## omit the 2pi constant
+        loss = 0.5 * (logvar + (targ - mean) ** 2 / torch.exp(logvar))
+        return loss.mean()
         ### END STUDENT SOLUTION - 1.2 ###
 
     def train_model(self, inputs, targets, batch_size=128, num_train_itrs=5):
@@ -69,5 +71,29 @@ class PENN(nn.Module):
           list with the average loss over all networks at each train iteration
         """
         ### BEGIN STUDENT SOLUTION - 1.2 ###
-        raise NotImplementedError("Problem 1.2: PENN.train_model")
+        inputs = torch.as_tensor(inputs, dtype=torch.float32, device=self.device)
+        targets = torch.as_tensor(targets, dtype=torch.float32, device=self.device)
+
+        losses = []
+        n = inputs.shape[0]
+
+        for _ in range(num_train_itrs):
+            batch_idx = torch.randint(
+                0, n, (batch_size,), device=self.device
+            )
+
+            batch_inputs = inputs[batch_idx]
+            batch_targets = targets[batch_idx]
+
+            predictions = self.forward(batch_inputs)
+
+            loss = sum(self.get_loss(batch_targets, mean, logvar) for mean, logvar in predictions) / self.num_nets
+
+            self.opt.zero_grad()
+            loss.backward()
+            self.opt.step()
+
+            losses.append(loss.item())
+
+        return losses
         ### END STUDENT SOLUTION - 1.2 ###

@@ -157,14 +157,42 @@ class MPC:
         # REMEMBER: model prediction is delta
         # Next state = delta sampled from model prediction + CURRENT state!
         ### BEGIN STUDENT SOLUTION - 1.2 ###
-        raise NotImplementedError("Problem 1.2: predict_next_state_model")
+        states_t = torch.as_tensor(states, dtype=torch.float32, device=self.model.device)
+        actions_t = torch.as_tensor(actions, dtype=torch.float32, device=self.model.device)
+        particles_per_action = states.shape[0] // actions.shape[0]
+        actions_t = actions_t.repeat_interleave(particles_per_action, dim=0)
+
+        inputs = torch.cat([states_t, actions_t], dim=-1)
+        predictions = self.model(inputs)
+
+        predicted_states = []
+
+        for mean, logvar in predictions:
+            noise = torch.randn_like(mean)
+            delta = mean + noise * torch.exp(0.5 * logvar)
+            predicted_states.append(states_t + delta)
+
+        predicted_states = torch.stack(predicted_states, dim=0)
+
+        network_indices = np.random.randint(self.num_nets, size=states.shape[0])
+        particle_indices = torch.arange(states.shape[0], device=states_t.device)
+
+        next_states = predicted_states[network_indices, particle_indices]
+
+        return next_states.detach().cpu().numpy()
+    
+    
         ### END STUDENT SOLUTION - 1.2 ###
 
     def predict_next_state_gt(self, states, actions):
         """Given a list of state action pairs, use the ground truth dynamics to predict the next state"""
         # Hint: see self.env.get_nxt_state in pets/envs/pusher.py
         ### BEGIN STUDENT SOLUTION - 1.1 ###
-        raise NotImplementedError("Problem 1.1: predict_next_state_gt")
+        # raise NotImplementedError("Problem 1.1: predict_next_state_gt")
+        next_states = []
+        for s, a in zip(states, actions):
+            next_states.append(self.env.get_nxt_state(s, a))
+        return np.stack(next_states)
         ### END STUDENT SOLUTION - 1.1 ###
 
     def train(self, obs_trajs, acs_trajs, rews_trajs, num_train_itrs=5):
