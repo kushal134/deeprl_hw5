@@ -5,3 +5,9 @@ __pycache__/
 code/log1.txt
 code/log2.txt
 code/log3.txt
+# LaTeX build artifacts
+latex/*.aux
+latex/*.log
+latex/*.out
+latex/*.fls
+latex/*.fdb_latexmk
