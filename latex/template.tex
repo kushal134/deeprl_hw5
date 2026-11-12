@@ -77,17 +77,23 @@ Open-loop control can be preferable in deterministic environments with accurate 
 
 \end{answer}
 
-\textbf{1.2.2} \pts{10} MPC with random sampling. Success percentage: \fillin{18 \%
+\textbf{1.2.2} \pts{10} MPC with random sampling. Success percentage: \fillin{30 \%
 }
 
-\textbf{1.2.3} \pts{10} MPC with CEM. Success percentage: \fillin{ 9 \%
+\textbf{1.2.3} \pts{10} MPC with CEM. Success percentage: \fillin{ 46 \%
 }
 
 \textbf{1.2.4} \pts{6} Random sampling vs.\ CEM. How did MPC with this model perform in general? When does the derived policy succeed, and when does it fail?
 \begin{answer}[height=6cm]
-  Random shooting achieved an 18\% success rate, while CEM achieved 6\%. Although CEM is a more effective optimizer in the ground-truth setting, it optimized inaccuracies in the learned dynamics model. This caused it to select action sequences with low predicted cost but poor real-environment performance. Random shooting was less susceptible to this model exploitation and therefore \textbf{performed better in this experiment}. 
-  
-  The learned-model policy succeeded when the model predictions were accurate over the short planning horizon and the required motion was simple. It failed especially near contact dynamics, in states poorly represented in the random training data, and when prediction errors compounded across several imagined steps. MPC helped by replanning, but it could not fully correct systematic errors in the learned model.
+  Random shooting achieved an 30\% success rate, while CEM achieved 46\%. 
+  CEM is able to perform better than random sampling because it able to explore the 
+  search space in a more effective way, and also updates its parameters based on observed performances, 
+  whereas random sampling does not utilise this information. MPC used with CEM seems to perform best for these particular settings, becasue MPC is able to incorporate
+  from the environment, and is able to correct errors caused by imperfect plans
+
+  The derived policy is the MPC controller using the learned dynamics model.
+  It succeeds when short-horizon predictions are accurate and fails when model errors compound, especially during pusher-box contact. 
+  MPC helps by replanning after each action, but cannot fully correct systematic model errors
 
   
 \end{answer}
