@@ -187,22 +187,34 @@ Learning curves (evaluation returns and Q-values) with $\alpha_\text{reg} = 10$.
 
 \textbf{(i)} Select all that apply and justify (see the handout for the three methods and statements 1--3).
 \begin{answer}[height=6cm]
-  % YOUR SOLUTION HERE
+  \small\setlength{\parskip}{2pt}
+  \textbf{Selected: 1 and 3.}
+  1 (\emph{True}). This is because with high coverage, $\hat\pi_\beta(a|s)$ is not $\sim0$ for truly good actions, so CQL's value penalty $\alpha(\mu/\hat\pi_\beta-1)$ doesn't become overly large and therefore the actor can still commit to such good actions. KL divergence on the other hand acts on the policy itself and so if the base policy was mediocre despite having good support, the learnt policy still won't shift much probability mass toward truly good actions. It also needs an explicitly fitted $\hat\pi_\beta$, which is hard to get right on broad, multi-policy data, whereas CQL only uses samples from the dataset.
+  2 (\emph{False}). First, less conservative is not automatically better since the reward penalty is only as good as $u(s,a)$ and getting this right is notoriously hard. Further, CQL is not uniformly more conservative since if $\pi$ stays on supported actions, the penalty doesn't become very large unlike reward penalties which \emph{might} be accumulated more through backups.
+  3 (\emph{True}). Policy constraints keep $\pi$ near $\pi_\beta$ even where the data supports better actions (as explained in 1) while CQL drops the explicit constraint and only penalizes Q-values of unsupported actions the policy prefers.
 \end{answer}
 
 \textbf{(ii)} Describe a scenario where distribution constraint methods would be preferable to support constraints.
 \begin{answer}[height=6cm]
-  % YOUR SOLUTION HERE
+  \small
+  Consider a scenario where we have a small dataset of actions from an expert behavior policy along with a minuscule number of sub-optimal/random actions. Since these random actions are technically in support, a support constraint would let the policy choose them freely. Then, if these random actions were poor/sub-optimal, we wouldn't know for sure since we only have a small number of transitions including them, and the $\hat Q$ estimates for them could also be high variance. So, if by chance the few transitions containing these poor actions happened to have good outcomes, $\hat Q$ would badly overestimate them. A support constraint lets the policy put all its mass on such an action; a distribution constraint keeps $\pi$ close to the actions $\pi_\beta$ took \emph{frequently}, where $\hat Q$ is well estimated, which here is near-expert behavior anyway. Additionally, if diversity is an explicit goal beyond return (e.g.\ for exploration during later online fine-tuning), a mode-covering distribution constraint such as forward KL $D_\mathrm{KL}(\pi_\beta\,\|\,\pi)$ preserves the multimodality of $\pi_\beta$, whereas a support constraint allows the policy to collapse onto a single mode.
 \end{answer}
 
 \textbf{(iii)} Select all that apply and justify (see the handout for statements 1--3).
 \begin{answer}[height=6cm]
-  % YOUR SOLUTION HERE
+  \small
+  \textbf{Selected: 2 only.}
+  1 (\emph{False}). Model-based methods only help if the learned dynamics $\hat T$ is accurate where the policy rolls out. When you have small datasets or long rollouts, model errors compound with rollout length and the policy ends up exploiting them, so a model-free method such as CQL, which never relies on $\hat T$, can do better. So, it is not true for all datasets.
+  2 (\emph{True}). This is because with narrow data, $\hat T$ is accurate only in a thin region around $\pi_\beta$'s state-action distribution. Optimizing inside the model, an unconstrained policy quickly rolls out of this region and then model errors become large and get exploited. A distributional constraint keeps $\pi$, and thereby the model rollouts, close to $\pi_\beta$, where $\hat T$ can be trusted and won't get exploited as much.
+  3 (\emph{False}). With broad, high-coverage data, $\hat T$ is accurate over most of the space, so its possibly very general and won't get exploited easily as in (2). The massive advantage of the model is then generalizing to find behavior much better than $\pi_\beta$. A distributional constraint pulls $\pi$ toward $\pi_\beta$'s (possibly mediocre) action frequencies regardless of coverage, thereby not using this advantage.
 \end{answer}
 
 \textbf{(iv)} Why can offline RL perform better than imitation learning? Give a dataset where offline RL should outperform imitation, and one where imitation should outperform offline RL.
 \begin{answer}[height=6cm]
-  % YOUR SOLUTION HERE
+  \small
+  Imitation copies $\pi_\beta$ and ignores rewards so bad trajectories \& mistakes are also learnt. Offline RL uses rewards and Bellman backups, so it can discard bad actions and \emph{stitch} good segments of different trajectories into a policy better than any trajectory in the data. It is also not capped by a mediocre imitation dataset. 
+  \emph{Offline RL $>$ imitation:} lots of mixed-quality or noisy data with good coverage, such as suboptimal trajectories where none reaches the goal but pieces of several do. BC copies the mediocre average, while offline RL can stitch together the good parts. Offline RL does even better in such a setting if you have sparse rewards since it can hill-climb whereas imitation would have no learning signal at all for ``optimality".
+  \emph{Imitation $>$ offline RL:} a small set of clean expert demonstrations with narrow coverage. BC is already near-optimal, so there is nothing to improve on, while offline RL must estimate $\hat Q$ from little, narrow data. Its value errors and conservatism tuning can start to hurt, and especially so when nearly every state is ``critical'' (one wrong action is catastrophic, for instance walking along a cliff with a humanoid).
 \end{answer}
 
 % ===========================================================================
