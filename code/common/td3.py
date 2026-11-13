@@ -162,7 +162,9 @@ class TD3:
                 # add bc_regularization_weight * bc_loss to actor_loss.
                 # Tip: put a `breakpoint()` here to inspect tensors in pdb.
                 ### BEGIN STUDENT SOLUTION - 2.3 ###
-                raise NotImplementedError("Problem 2.3: BC regularization")
+                # squared l2 norm over action dims, then mean over batch
+                bc_loss = ((actions - actions_pi)**2).sum(dim=1).mean()
+                actor_loss = actor_loss + self.bc_regularization_weight * bc_loss
                 ### END STUDENT SOLUTION - 2.3 ###
 
             self.actor_opt.zero_grad()
