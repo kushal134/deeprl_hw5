@@ -32,7 +32,21 @@ def get_buffer_and_environments_for_task(minari_dataset_name="mujoco/hopper/medi
     # - If you are unsure what fields a Minari object has, put a `breakpoint()` here and inspect it
     #   in pdb with `p dir(object)`.
     ### BEGIN STUDENT SOLUTION - 2.1 ###
-    raise NotImplementedError("Problem 2.1: get_buffer_and_environments_for_task")
+    dataset = minari.load_dataset(minari_dataset_name, download=True)
+    eval_env = dataset.recover_environment(render_mode="rgb_array")
+
+    obs_dim = int(np.prod(eval_env.observation_space.shape))
+    act_dim = int(np.prod(eval_env.action_space.shape))
+
+    # initialize replay buffer
+    offline_buffer = ReplayBuffer(obs_dim, act_dim, max_size=dataset.total_steps, device=device)
+
+    for episode in dataset.iterate_episodes():
+        # observations has one more entry than actions as it includes the final observation as well
+        observation = episode.observations[:-1]
+        next_observation = episode.observations[1:]
+        # we only use terminations as done
+        offline_buffer.add_batch(observation, episode.actions, episode.rewards, next_observation, episode.terminations)
     ### END STUDENT SOLUTION - 2.1 ###
 
     assert offline_buffer.size == dataset.total_steps, \
